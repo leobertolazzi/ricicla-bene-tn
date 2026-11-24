@@ -325,7 +325,9 @@ async function initOnnxSession() {
     throw new Error("ONNX Runtime Web non caricato.");
   }
 
-  ort.env.wasm.wasmPaths = "./vendor/ort/";
+  const ortBaseUrl = new URL("./vendor/ort/", window.location.href).href;
+  const modelUrl = new URL(MODEL_URL, window.location.href).href;
+  ort.env.wasm.wasmPaths = ortBaseUrl;
   ort.env.wasm.numThreads = self.crossOriginIsolated
     ? Math.min(4, navigator.hardwareConcurrency || 2)
     : 1;
@@ -336,7 +338,7 @@ async function initOnnxSession() {
   let lastError = null;
   for (const providers of providersToTry) {
     try {
-      const session = await ort.InferenceSession.create(MODEL_URL, {
+      const session = await ort.InferenceSession.create(modelUrl, {
         executionProviders: providers,
         graphOptimizationLevel: "all",
       });
@@ -430,7 +432,8 @@ async function runModelInference(inputTensor) {
     // If WebGPU fails on MatMulNBits in a specific browser, fall back cleanly to WASM.
     if (state.executionProvider !== "wasm") {
       console.warn("WebGPU inference failed, falling back to WASM:", err);
-      state.session = await ort.InferenceSession.create(MODEL_URL, {
+      const modelUrl = new URL(MODEL_URL, window.location.href).href;
+      state.session = await ort.InferenceSession.create(modelUrl, {
         executionProviders: ["wasm"],
         graphOptimizationLevel: "all",
       });
