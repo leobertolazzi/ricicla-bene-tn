@@ -1,0 +1,48 @@
+name: Check Riciclabolario Updates
+
+on:
+  schedule:
+    # Run every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install pipeline dependencies (CPU)
+        run: |
+          uv pip install --system --extra-index-url https://download.pytorch.org/whl/cpu \
+            torch transformers huggingface-hub numpy pillow
+
+      - name: Check Dolomiti Ambiente Riciclabolario for changes
+        id: check
+        run: |
+          python pipeline/check_riciclabolario_updates.py --summary-out /tmp/riciclabolario_diff.md
+
+      - name: Create Pull Request if data changed
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore(data): update Trento Riciclabolario dictionary & embeddings"
+          branch: chore/riciclabolario-update
+          delete-branch: true
+          title: "chore(data): aggiorna Riciclabolario Trento"
+          body-path: /tmp/riciclabolario_diff.md
+          labels: |
+            data-update

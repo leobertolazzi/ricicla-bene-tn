@@ -1,0 +1,26 @@
+{
+  "name": "Ricicla Bene TN",
+  "short_name": "Ricicla TN",
+  "description": "Riconoscimento rifiuti offline per il Comune di Trento (Riciclabolario Dolomiti Ambiente)",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f8fb",
+  "theme_color": "#006390",
+  "lang": "it-IT",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

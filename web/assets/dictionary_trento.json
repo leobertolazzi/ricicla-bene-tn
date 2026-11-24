@@ -1,0 +1,4938 @@
+{
+  "schema_version": 3,
+  "comune": "Trento",
+  "utenza": "Domestica",
+  "source_url": "https://dolomitiambiente.it/it/trento/domestica/raccolta-differenziata/riciclabolario",
+  "pdf_url": "https://dolomitiambiente.it/files/modulistica/34/normal/260901_riciclabolario_web.pdf",
+  "scraped_at": "2026-11-24T07:48:25.646542+00:00",
+  "model_name": "SigLIP 2 Base",
+  "model_hf_id": "google/siglip2-base-patch16-224",
+  "model_license": "Apache-2.0",
+  "image_size": 224,
+  "softmax_temperature": 55.0,
+  "embedding_dim": 768,
+  "item_count": 432,
+  "bins": [
+    {
+      "id": 1,
+      "label": "CARTA E CARTONE",
+      "short_label": "Carta",
+      "color_hex": "#F4C430",
+      "text_color_hex": "#1B2024",
+      "source_color_hex": "#5384c0",
+      "sf_symbol": "newspaper.fill",
+      "guidance_it": "Contenitore con coperchio giallo (raccolta porta a porta settimanale): inserire carta e cartoni sfusi e ripiegati."
+    },
+    {
+      "id": 2,
+      "label": "CENTRO RACCOLTA",
+      "short_label": "CRM",
+      "color_hex": "#64748B",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#6d5d3f",
+      "sf_symbol": "building.2.fill",
+      "guidance_it": "Conferire ai Centri Raccolta (CR) o al Centro Integrato di Dolomiti Ambiente sul territorio."
+    },
+    {
+      "id": 3,
+      "label": "DITTA SPECIALIZZATA",
+      "short_label": "Ditta Spec.",
+      "color_hex": "#C53030",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#6d5d3f",
+      "sf_symbol": "exclamationmark.triangle.fill",
+      "guidance_it": "Rifiuto speciale: rivolgersi a una ditta specializzata autorizzata."
+    },
+    {
+      "id": 4,
+      "label": "FARMACIA",
+      "short_label": "Farmacia",
+      "color_hex": "#0F766E",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#84b654",
+      "sf_symbol": "cross.case.fill",
+      "guidance_it": "Conferire negli appositi contenitori presso le farmacie."
+    },
+    {
+      "id": 5,
+      "label": "IMBALLAGGI LEGGERI",
+      "short_label": "Imb. Leggeri",
+      "color_hex": "#0284C7",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#f4c538",
+      "sf_symbol": "waterbottle.fill",
+      "guidance_it": "Sacchi semitrasparenti azzurri (raccolta porta a porta settimanale): solo imballaggi in plastica, alluminio, acciaio e cartoni per bevande, vuoti e ridotti di volume."
+    },
+    {
+      "id": 6,
+      "label": "ORGANICO",
+      "short_label": "Organico",
+      "color_hex": "#7B4F2C",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#4e4f5d",
+      "sf_symbol": "leaf.fill",
+      "guidance_it": "Contenitore con coperchio marrone (2 volte a settimana): usare esclusivamente gli appositi sacchetti in carta."
+    },
+    {
+      "id": 7,
+      "label": "RESIDUO",
+      "short_label": "Residuo",
+      "color_hex": "#1B4D3E",
+      "text_color_hex": "#FFFFFF",
+      "source_color_hex": "#0d698d",
+      "sf_symbol": "trash.fill",
+      "guidance_it": "Contenitore con coperchio verde scuro (tariffa puntuale, settimanale): utilizzare qualsiasi tipo di sacchetto per il secco non riciclabile."
+    },
+    {
+      "id": 8,
+      "label": "VETRO",
+      "short_label": "Vetro",
+      "color_hex": "#78C850",
+      "text_color_hex": "#13260D",
+      "source_color_hex": "#0d698d",
+      "sf_symbol": "wineglass.fill",
+      "guidance_it": "Contenitore con coperchio verde chiaro (ogni 2 settimane): bottiglie e vasetti sfusi e vuoti, senza tappi metallici."
+    }
+  ],
+  "items": [
+    {
+      "index": 0,
+      "id": 1,
+      "name_it": "Abbigliamento",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clothing",
+        "folded clothes",
+        "t-shirt or jacket",
+        "garment"
+      ]
+    },
+    {
+      "index": 1,
+      "id": 2,
+      "name_it": "Accendino",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic cigarette lighter",
+        "disposable gas lighter",
+        "bic lighter"
+      ]
+    },
+    {
+      "index": 2,
+      "id": 6,
+      "name_it": "Accumulatori per auto",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "car battery",
+        "automotive lead-acid battery"
+      ]
+    },
+    {
+      "index": 3,
+      "id": 3,
+      "name_it": "Acetone - Acquaragia",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bottle of acetone or turpentine",
+        "paint thinner bottle",
+        "nail polish remover chemical bottle"
+      ]
+    },
+    {
+      "index": 4,
+      "id": 4,
+      "name_it": "Acidi",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bottle of acid",
+        "corrosive chemical bottle",
+        "muriatic acid container"
+      ]
+    },
+    {
+      "index": 5,
+      "id": 5,
+      "name_it": "Acquaragia - Acetone (contenitore vuoto e risciacquato)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty rinsed acetone bottle",
+        "empty turpentine plastic or metal container"
+      ]
+    },
+    {
+      "index": 6,
+      "id": 7,
+      "name_it": "Addobbi natalizi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "christmas ornaments",
+        "holiday baubles",
+        "christmas tree decorations"
+      ]
+    },
+    {
+      "index": 7,
+      "id": 8,
+      "name_it": "Aghi da siringa",
+      "bin_id": 4,
+      "bin_label": "FARMACIA",
+      "prompts_en": [
+        "syringe needle",
+        "hypodermic medical needle"
+      ]
+    },
+    {
+      "index": 8,
+      "id": 9,
+      "name_it": "Albero di Natale in materiale sintetico",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small artificial christmas tree",
+        "fake plastic christmas tree"
+      ]
+    },
+    {
+      "index": 9,
+      "id": 10,
+      "name_it": "Albero di Natale in materiale sintetico (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large artificial christmas tree",
+        "big fake christmas tree"
+      ]
+    },
+    {
+      "index": 10,
+      "id": 11,
+      "name_it": "Albero di Natale naturale",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "real natural christmas tree",
+        "pine or fir christmas tree"
+      ]
+    },
+    {
+      "index": 11,
+      "id": 12,
+      "name_it": "Alcool (contenitore vuoto e risciacquato)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty rinsed rubbing alcohol bottle",
+        "empty denatured alcohol plastic bottle"
+      ]
+    },
+    {
+      "index": 12,
+      "id": 13,
+      "name_it": "Alluminio (contenitore)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "aluminum food tray",
+        "aluminum foil container",
+        "disposable aluminum pan"
+      ]
+    },
+    {
+      "index": 13,
+      "id": 14,
+      "name_it": "Amianto",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "asbestos sheet",
+        "corrugated asbestos cement roofing"
+      ]
+    },
+    {
+      "index": 14,
+      "id": 15,
+      "name_it": "Ammoniaca (contenitore vuoto e risciacquato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "empty ammonia bottle",
+        "empty household ammonia cleaning bottle"
+      ]
+    },
+    {
+      "index": 15,
+      "id": 16,
+      "name_it": "Antiparassitari",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "pesticide spray bottle",
+        "insecticide can",
+        "garden pesticide container"
+      ]
+    },
+    {
+      "index": 16,
+      "id": 17,
+      "name_it": "Antitarme",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "mothballs",
+        "moth repellent blocks or sachets"
+      ]
+    },
+    {
+      "index": 17,
+      "id": 18,
+      "name_it": "Apparecchiature elettriche ed elettroniche",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "electrical and electronic equipment",
+        "small electronic appliance",
+        "e-waste device"
+      ]
+    },
+    {
+      "index": 18,
+      "id": 19,
+      "name_it": "Appendiabiti in legno",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wooden clothes hanger",
+        "wood coat hanger"
+      ]
+    },
+    {
+      "index": 19,
+      "id": 20,
+      "name_it": "Appendiabiti in legno (grandi quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "many wooden clothes hangers",
+        "pile of wooden coat hangers"
+      ]
+    },
+    {
+      "index": 20,
+      "id": 21,
+      "name_it": "Appendiabiti in plastica e in metallo",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic clothes hanger",
+        "wire metal coat hanger"
+      ]
+    },
+    {
+      "index": 21,
+      "id": 22,
+      "name_it": "Armadio",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wardrobe cabinet",
+        "wooden closet furniture"
+      ]
+    },
+    {
+      "index": 22,
+      "id": 23,
+      "name_it": "Asciugacapelli",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "hair dryer",
+        "electric blow dryer"
+      ]
+    },
+    {
+      "index": 23,
+      "id": 24,
+      "name_it": "Aspirapolvere",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "vacuum cleaner",
+        "home vacuum appliance"
+      ]
+    },
+    {
+      "index": 24,
+      "id": 25,
+      "name_it": "Asse da stiro",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "ironing board",
+        "folding ironing table"
+      ]
+    },
+    {
+      "index": 25,
+      "id": 26,
+      "name_it": "Assorbenti",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "sanitary pad",
+        "menstrual pad",
+        "panty liner"
+      ]
+    },
+    {
+      "index": 26,
+      "id": 27,
+      "name_it": "Astuccio",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "pencil case",
+        "zippered school pouch"
+      ]
+    },
+    {
+      "index": 27,
+      "id": 28,
+      "name_it": "Attaccapanni (ferro, legno, plastica)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "coat rack",
+        "coat stand",
+        "wall coat hanger"
+      ]
+    },
+    {
+      "index": 28,
+      "id": 29,
+      "name_it": "Barattoli in metallo latta/plastica",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "metal tin can",
+        "tin food jar",
+        "plastic food jar"
+      ]
+    },
+    {
+      "index": 29,
+      "id": 30,
+      "name_it": "Barattoli in vetro",
+      "bin_id": 8,
+      "bin_label": "VETRO",
+      "prompts_en": [
+        "glass jar",
+        "empty glass jam jar",
+        "glass food jar"
+      ]
+    },
+    {
+      "index": 30,
+      "id": 31,
+      "name_it": "Bastoncini per caramelle \"lollipop\"",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "lollipop stick",
+        "candy plastic stick"
+      ]
+    },
+    {
+      "index": 31,
+      "id": 32,
+      "name_it": "Batterie d’auto",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "car battery",
+        "12v automotive battery"
+      ]
+    },
+    {
+      "index": 32,
+      "id": 33,
+      "name_it": "Batterie esauste",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "used batteries",
+        "dead AA or AAA alkaline batteries",
+        "button cell battery"
+      ]
+    },
+    {
+      "index": 33,
+      "id": 34,
+      "name_it": "Batuffolo e bastoncini di cotone",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "cotton ball",
+        "cotton swab",
+        "cotton wool pad"
+      ]
+    },
+    {
+      "index": 34,
+      "id": 35,
+      "name_it": "Biancheria intima",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "underwear",
+        "socks and briefs",
+        "lingerie"
+      ]
+    },
+    {
+      "index": 35,
+      "id": 36,
+      "name_it": "Bicchiere biodegradabile in mater-bi (conformi normativa UNI EN 13432-2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "compostable biodegradable cup",
+        "mater-bi eco cup"
+      ]
+    },
+    {
+      "index": 36,
+      "id": 37,
+      "name_it": "Bicchiere in plastica monouso (pulito)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "disposable plastic cup",
+        "clean plastic party cup"
+      ]
+    },
+    {
+      "index": 37,
+      "id": 38,
+      "name_it": "Bicchiere in vetro",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "drinking glass",
+        "glass tumbler",
+        "wine glass"
+      ]
+    },
+    {
+      "index": 38,
+      "id": 39,
+      "name_it": "Biciclette",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bicycle",
+        "old bike"
+      ]
+    },
+    {
+      "index": 39,
+      "id": 40,
+      "name_it": "Bigiotteria",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "costume jewelry",
+        "plastic or metal necklace bracelet earrings"
+      ]
+    },
+    {
+      "index": 40,
+      "id": 41,
+      "name_it": "Biglia in vetro",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "glass marble",
+        "toy glass marbles"
+      ]
+    },
+    {
+      "index": 41,
+      "id": 42,
+      "name_it": "Blister in plastica e alluminio (vuoto)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty medicine blister pack",
+        "empty pill blister foil plastic"
+      ]
+    },
+    {
+      "index": 42,
+      "id": 44,
+      "name_it": "Bombole del gas",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large gas cylinder",
+        "propane gas tank"
+      ]
+    },
+    {
+      "index": 43,
+      "id": 45,
+      "name_it": "Bombole piccole da campeggio (vuote)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "small empty camping gas canister",
+        "butane camping cartridge"
+      ]
+    },
+    {
+      "index": 44,
+      "id": 43,
+      "name_it": "Bombolette spray (con simbolo: T e/o F)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "aerosol spray can",
+        "spray paint can",
+        "pressurized spray bottle with hazard symbol"
+      ]
+    },
+    {
+      "index": 45,
+      "id": 49,
+      "name_it": "Borse / Borsette",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "handbag",
+        "purse",
+        "leather shoulder bag"
+      ]
+    },
+    {
+      "index": 46,
+      "id": 47,
+      "name_it": "Borse per la spesa riutilizzabili (in stoffa)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "reusable cloth tote bag",
+        "fabric canvas shopping bag"
+      ]
+    },
+    {
+      "index": 47,
+      "id": 48,
+      "name_it": "Borse per la spesa riutilizzabili (sintetiche)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "reusable synthetic shopping bag",
+        "woven nylon supermarket bag"
+      ]
+    },
+    {
+      "index": 48,
+      "id": 46,
+      "name_it": "Borse/buste di plastica per la spesa in mater-bi (conformi normativa UNI EN 13432-2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "compostable biodegradable grocery bag",
+        "mater-bi supermarket produce bag"
+      ]
+    },
+    {
+      "index": 49,
+      "id": 51,
+      "name_it": "Bottiglia in vetro priva di tappo",
+      "bin_id": 8,
+      "bin_label": "VETRO",
+      "prompts_en": [
+        "glass bottle",
+        "empty wine bottle",
+        "empty beer glass bottle"
+      ]
+    },
+    {
+      "index": 50,
+      "id": 50,
+      "name_it": "Bottiglie in plastica",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic bottle",
+        "empty plastic water bottle",
+        "PET soda bottle"
+      ]
+    },
+    {
+      "index": 51,
+      "id": 52,
+      "name_it": "Bottoni",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "sewing buttons",
+        "plastic or metal clothing button"
+      ]
+    },
+    {
+      "index": 52,
+      "id": 53,
+      "name_it": "Box per bambini",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "baby playpen",
+        "child play yard"
+      ]
+    },
+    {
+      "index": 53,
+      "id": 56,
+      "name_it": "Busta in materiale accoppiato carta e plastica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "paper and plastic laminated envelope",
+        "paper pouch with plastic window"
+      ]
+    },
+    {
+      "index": 54,
+      "id": 55,
+      "name_it": "Busta in materiale accoppiato plastica e alluminio",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "foil-lined plastic pouch",
+        "chip bag or coffee pouch",
+        "plastic aluminum wrapper"
+      ]
+    },
+    {
+      "index": 55,
+      "id": 54,
+      "name_it": "Busta o incarto in materiale accoppiato (salvo diversa indicazione sulla confezione)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "multi-layer composite wrapper",
+        "snack wrapper pouch"
+      ]
+    },
+    {
+      "index": 56,
+      "id": 58,
+      "name_it": "Busta trasparente porta documenti",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "clear plastic sheet protector",
+        "plastic document sleeve folder"
+      ]
+    },
+    {
+      "index": 57,
+      "id": 57,
+      "name_it": "Buste o sacchetti in plastica per alimenti",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic food bag",
+        "clear plastic zip bag",
+        "plastic freezer bag"
+      ]
+    },
+    {
+      "index": 58,
+      "id": 59,
+      "name_it": "Calcinacci (in modestà quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "construction rubble",
+        "broken bricks and concrete debris"
+      ]
+    },
+    {
+      "index": 59,
+      "id": 60,
+      "name_it": "Calcolatrice",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "pocket calculator",
+        "electronic desk calculator"
+      ]
+    },
+    {
+      "index": 60,
+      "id": 61,
+      "name_it": "Calendari oda muro o da tavolo in carta o cartone",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper wall calendar",
+        "cardboard desk calendar"
+      ]
+    },
+    {
+      "index": 61,
+      "id": 62,
+      "name_it": "Calze e calzini",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "socks",
+        "pair of cotton or wool socks"
+      ]
+    },
+    {
+      "index": 62,
+      "id": 63,
+      "name_it": "Camera d'aria",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "bicycle inner tube",
+        "rubber tire tube"
+      ]
+    },
+    {
+      "index": 63,
+      "id": 65,
+      "name_it": "Candeggina",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "full bottle of bleach",
+        "liquid chlorine bleach bottle"
+      ]
+    },
+    {
+      "index": 64,
+      "id": 64,
+      "name_it": "Candeggina (contenitore vuoto e pulito)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty clean bleach bottle",
+        "empty plastic bleach jug"
+      ]
+    },
+    {
+      "index": 65,
+      "id": 66,
+      "name_it": "Candela di cera",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wax candle",
+        "pillar candle",
+        "tea light wax"
+      ]
+    },
+    {
+      "index": 66,
+      "id": 68,
+      "name_it": "Canna per irrigazione giardino (gomma dell'acqua)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "garden water hose",
+        "rubber watering hose"
+      ]
+    },
+    {
+      "index": 67,
+      "id": 67,
+      "name_it": "Canne da pesca",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "fishing rod",
+        "fishing pole"
+      ]
+    },
+    {
+      "index": 68,
+      "id": 69,
+      "name_it": "Canovacci",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "kitchen dish towel",
+        "cotton tea towel"
+      ]
+    },
+    {
+      "index": 69,
+      "id": 70,
+      "name_it": "Capelli e simili",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "human hair",
+        "pet fur clump"
+      ]
+    },
+    {
+      "index": 70,
+      "id": 71,
+      "name_it": "Cappello",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "hat",
+        "baseball cap",
+        "winter beanie"
+      ]
+    },
+    {
+      "index": 71,
+      "id": 72,
+      "name_it": "Capsule in plastica e/o alluminio (pulite)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "clean plastic or aluminum coffee capsule",
+        "empty espresso pod"
+      ]
+    },
+    {
+      "index": 72,
+      "id": 73,
+      "name_it": "Capsule in plastica e/o alluminio (sporche)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "used coffee capsule",
+        "nespresso aluminum or plastic coffee pod"
+      ]
+    },
+    {
+      "index": 73,
+      "id": 75,
+      "name_it": "Carbone (da altre fonti)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "mineral coal",
+        "briquette charcoal"
+      ]
+    },
+    {
+      "index": 74,
+      "id": 74,
+      "name_it": "Carbone (da legna)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "wood charcoal",
+        "barbecue lump charcoal"
+      ]
+    },
+    {
+      "index": 75,
+      "id": 76,
+      "name_it": "Carne",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "raw or cooked meat scraps",
+        "leftover meat"
+      ]
+    },
+    {
+      "index": 76,
+      "id": 77,
+      "name_it": "Carrozzine",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "baby stroller",
+        "pram",
+        "pushchair"
+      ]
+    },
+    {
+      "index": 77,
+      "id": 78,
+      "name_it": "Carta (fogli, quaderni, sacchetti, libri) CR - CARTA",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "sheets of paper",
+        "notebook",
+        "paper bag",
+        "stacked paper"
+      ]
+    },
+    {
+      "index": 78,
+      "id": 79,
+      "name_it": "Carta assorbente (da cucina)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "paper towel",
+        "kitchen roll tissue",
+        "used kitchen paper"
+      ]
+    },
+    {
+      "index": 79,
+      "id": 80,
+      "name_it": "Carta carbone",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "carbon paper sheet",
+        "blue transfer paper"
+      ]
+    },
+    {
+      "index": 80,
+      "id": 81,
+      "name_it": "Carta cerata",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wax paper",
+        "parchment baking paper"
+      ]
+    },
+    {
+      "index": 81,
+      "id": 82,
+      "name_it": "Carta in rotolo \"copri lettini\" (es: estetiste, studio medico, ecc.)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "medical exam table paper roll",
+        "white hygiene paper roll"
+      ]
+    },
+    {
+      "index": 82,
+      "id": 83,
+      "name_it": "Carta per affettati e/o formaggi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "butcher paper",
+        "deli cheese and cold cuts wrapping paper"
+      ]
+    },
+    {
+      "index": 83,
+      "id": 84,
+      "name_it": "Carta plastificata o carta accoppiata con alluminio",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "laminated glossy paper",
+        "foil-lined paper wrapper",
+        "butter wrapper"
+      ]
+    },
+    {
+      "index": 84,
+      "id": 86,
+      "name_it": "Carta stagnola (in alluminio e pulita)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "clean aluminum foil",
+        "ball of silver tin foil"
+      ]
+    },
+    {
+      "index": 85,
+      "id": 87,
+      "name_it": "Carta tissue (lavamani) e fazzoletti",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper hand towel",
+        "dry tissue paper"
+      ]
+    },
+    {
+      "index": 86,
+      "id": 85,
+      "name_it": "Carta unta, sporca di colla o altre sostanze (chimiche)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "greasy stained paper",
+        "paper dirty with oil glue or paint"
+      ]
+    },
+    {
+      "index": 87,
+      "id": 88,
+      "name_it": "Carta vetrata",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "sandpaper",
+        "abrasive sanding sheet"
+      ]
+    },
+    {
+      "index": 88,
+      "id": 91,
+      "name_it": "Cartone (pulito)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "clean cardboard",
+        "flattened cardboard box",
+        "corrugated cardboard"
+      ]
+    },
+    {
+      "index": 89,
+      "id": 89,
+      "name_it": "Cartongesso",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small piece of drywall",
+        "plasterboard gypsum scrap"
+      ]
+    },
+    {
+      "index": 90,
+      "id": 90,
+      "name_it": "Cartongesso (grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large drywall panels",
+        "pile of gypsum plasterboard"
+      ]
+    },
+    {
+      "index": 91,
+      "id": 92,
+      "name_it": "Cartucce esauste/toner",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "printer ink cartridge",
+        "laser toner cartridge"
+      ]
+    },
+    {
+      "index": 92,
+      "id": 93,
+      "name_it": "Cassette audio e video",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "audio cassette tape",
+        "VHS video cassette"
+      ]
+    },
+    {
+      "index": 93,
+      "id": 94,
+      "name_it": "Cassette di legno o plastica",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden fruit crate",
+        "heavy plastic storage crate"
+      ]
+    },
+    {
+      "index": 94,
+      "id": 96,
+      "name_it": "Cassettine di plastica per alimenti (di grandi dimensioni)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic food crate",
+        "stackable plastic produce crate"
+      ]
+    },
+    {
+      "index": 95,
+      "id": 95,
+      "name_it": "Cassettine di plastica per alimenti (frutta e verdura) uso domestico",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "small plastic produce punnet",
+        "plastic berry basket or vegetable tray"
+      ]
+    },
+    {
+      "index": 96,
+      "id": 97,
+      "name_it": "Cavi elettrici (completi di connettori)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "electrical power cord",
+        "USB charging cable with plug",
+        "extension cord"
+      ]
+    },
+    {
+      "index": 97,
+      "id": 98,
+      "name_it": "CD-ROM/DVD",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "compact disc CD",
+        "DVD optical disc"
+      ]
+    },
+    {
+      "index": 98,
+      "id": 99,
+      "name_it": "Cellophane",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "clear cellophane wrap",
+        "plastic cling film",
+        "clear plastic packaging film"
+      ]
+    },
+    {
+      "index": 99,
+      "id": 100,
+      "name_it": "Cellophane in nylon per imballaggi (grandi dimensioni maggiore 60x40cm",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large nylon packaging sheet",
+        "big plastic pallet wrap roll"
+      ]
+    },
+    {
+      "index": 100,
+      "id": 101,
+      "name_it": "Cellulare",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "smartphone",
+        "old mobile phone",
+        "cell phone"
+      ]
+    },
+    {
+      "index": 101,
+      "id": 102,
+      "name_it": "Ceneri legna (spenta) di origine domestica",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "cold wood ash",
+        "fireplace wood ashes"
+      ]
+    },
+    {
+      "index": 102,
+      "id": 103,
+      "name_it": "Cera",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "block of wax",
+        "melted candle wax"
+      ]
+    },
+    {
+      "index": 103,
+      "id": 104,
+      "name_it": "Ceramica, porcellana, terracotta (tazzine e stoviglie)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "ceramic cup",
+        "porcelain dish",
+        "terracotta mug or saucer"
+      ]
+    },
+    {
+      "index": 104,
+      "id": 105,
+      "name_it": "Ceramica, porcellana, terracotta (tazzine e stoviglie)(se di grandi dimensioni)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large ceramic pot",
+        "big terracotta vase or heavy stoneware"
+      ]
+    },
+    {
+      "index": 105,
+      "id": 106,
+      "name_it": "Cerotto",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "adhesive bandage",
+        "band-aid plaster"
+      ]
+    },
+    {
+      "index": 106,
+      "id": 107,
+      "name_it": "Chiavi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "metal house key",
+        "keyring with keys"
+      ]
+    },
+    {
+      "index": 107,
+      "id": 108,
+      "name_it": "Chiavi (se in grandi quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large pile of metal keys",
+        "many scrap keys"
+      ]
+    },
+    {
+      "index": 108,
+      "id": 109,
+      "name_it": "Chiodi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "metal nails",
+        "iron screws and nails"
+      ]
+    },
+    {
+      "index": 109,
+      "id": 110,
+      "name_it": "Chiodi (se in grandi quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "box of many metal nails",
+        "large quantity of iron nails"
+      ]
+    },
+    {
+      "index": 110,
+      "id": 111,
+      "name_it": "Cibi cotti e crudi",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "cooked food leftovers",
+        "raw food scraps",
+        "plate of leftover food"
+      ]
+    },
+    {
+      "index": 111,
+      "id": 112,
+      "name_it": "Cintura (in plastica, stoffa o cuoio in buono stato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "leather belt",
+        "cloth waist belt in good condition"
+      ]
+    },
+    {
+      "index": 112,
+      "id": 113,
+      "name_it": "Cintura inutilizzabile",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "broken worn-out belt",
+        "damaged waist belt"
+      ]
+    },
+    {
+      "index": 113,
+      "id": 114,
+      "name_it": "Colla e collanti",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "glue bottle",
+        "tube of super glue or adhesive"
+      ]
+    },
+    {
+      "index": 114,
+      "id": 115,
+      "name_it": "Colla e collanti (contenitore vuoto e risciacquato)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty rinsed glue bottle",
+        "empty plastic glue container"
+      ]
+    },
+    {
+      "index": 115,
+      "id": 116,
+      "name_it": "Computer",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "desktop computer",
+        "laptop computer",
+        "PC tower"
+      ]
+    },
+    {
+      "index": 116,
+      "id": 119,
+      "name_it": "Confezioni in cartoncino per alimenti (porta uova, scatole pasta/riso)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "cardboard egg carton",
+        "pasta cardboard box",
+        "cereal box"
+      ]
+    },
+    {
+      "index": 117,
+      "id": 120,
+      "name_it": "Confezioni in plastica eo polistirolo rigide/sagomate per alimenti e cover",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "rigid molded plastic food clamshell",
+        "styrofoam food tray",
+        "plastic packaging shell"
+      ]
+    },
+    {
+      "index": 118,
+      "id": 121,
+      "name_it": "contenitore per alimenti \"general line\" (latte)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "metal oil can",
+        "rectangular tin can",
+        "metal cookie tin"
+      ]
+    },
+    {
+      "index": 119,
+      "id": 122,
+      "name_it": "Contenitori in plastica (capacità max 5 lt)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic container up to 5 liters",
+        "plastic tub or jerrycan"
+      ]
+    },
+    {
+      "index": 120,
+      "id": 117,
+      "name_it": "Contenitori in plastica/acciaio",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic food container",
+        "steel tin container"
+      ]
+    },
+    {
+      "index": 121,
+      "id": 118,
+      "name_it": "Contenitori in plastica/acciaio (se grandi)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic storage bin",
+        "big metal drum container"
+      ]
+    },
+    {
+      "index": 122,
+      "id": 123,
+      "name_it": "Contenitori per bevande (in cartone poliaccoppiato)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "tetra pak carton",
+        "milk carton",
+        "fruit juice carton",
+        "drink box"
+      ]
+    },
+    {
+      "index": 123,
+      "id": 124,
+      "name_it": "Contenitori per cosmetici vuoti",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty cosmetic bottle",
+        "empty shampoo or lotion plastic bottle"
+      ]
+    },
+    {
+      "index": 124,
+      "id": 125,
+      "name_it": "coperchio in plastica e/o alluminio per alimenti",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic jar lid",
+        "aluminum foil yogurt lid",
+        "metal bottle cap"
+      ]
+    },
+    {
+      "index": 125,
+      "id": 126,
+      "name_it": "Copertoni per automobili e motociclette (utenze domestiche)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "car tire",
+        "motorcycle rubber tire"
+      ]
+    },
+    {
+      "index": 126,
+      "id": 127,
+      "name_it": "Copertoni per biciclette",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bicycle tire",
+        "rubber bike tire"
+      ]
+    },
+    {
+      "index": 127,
+      "id": 128,
+      "name_it": "Cornice grande (plastica, metallo o legno verniciato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large picture frame",
+        "big wooden or metal wall frame"
+      ]
+    },
+    {
+      "index": 128,
+      "id": 130,
+      "name_it": "Cosmetici (contenitore pieno o contenente residui)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "full cosmetic container",
+        "makeup bottle with product inside",
+        "lipstick or cream jar"
+      ]
+    },
+    {
+      "index": 129,
+      "id": 129,
+      "name_it": "Cosmetici (contenitore vuoto)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty cosmetic jar",
+        "empty makeup plastic container"
+      ]
+    },
+    {
+      "index": 130,
+      "id": 131,
+      "name_it": "Cotone usato",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "used cotton pad",
+        "makeup remover cotton disc"
+      ]
+    },
+    {
+      "index": 131,
+      "id": 132,
+      "name_it": "Cotton-fioc",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "cotton bud",
+        "q-tip cotton swab"
+      ]
+    },
+    {
+      "index": 132,
+      "id": 133,
+      "name_it": "Cover telefono",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "smartphone case",
+        "silicone or plastic phone cover"
+      ]
+    },
+    {
+      "index": 133,
+      "id": 134,
+      "name_it": "Crema per viso, corpo, abbronzanti)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "tube of face cream",
+        "sunscreen lotion bottle",
+        "body cream jar"
+      ]
+    },
+    {
+      "index": 134,
+      "id": 135,
+      "name_it": "Cucchiai in metallo",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "metal spoons",
+        "stainless steel soup spoon"
+      ]
+    },
+    {
+      "index": 135,
+      "id": 136,
+      "name_it": "Cuoio",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "piece of leather",
+        "leather scrap"
+      ]
+    },
+    {
+      "index": 136,
+      "id": 138,
+      "name_it": "Cuscini",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small throw pillow",
+        "cushion"
+      ]
+    },
+    {
+      "index": 137,
+      "id": 137,
+      "name_it": "Cuscini (grandi dimensioni)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large sofa cushion",
+        "big bed pillow"
+      ]
+    },
+    {
+      "index": 138,
+      "id": 139,
+      "name_it": "Custodie CD musicassette / VHS",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic CD jewel case",
+        "DVD or VHS plastic box"
+      ]
+    },
+    {
+      "index": 139,
+      "id": 140,
+      "name_it": "Damigiana",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large glass demijohn",
+        "carboy wine jug in basket"
+      ]
+    },
+    {
+      "index": 140,
+      "id": 141,
+      "name_it": "Deodoranti uso personale (contenitore con simboli di pericolo)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "aerosol deodorant spray can with hazard symbol",
+        "pressurized deodorant can"
+      ]
+    },
+    {
+      "index": 141,
+      "id": 142,
+      "name_it": "Deodoranti uso personale (contenitore vuoto e senza simboli di pericolo)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty roll-on deodorant bottle",
+        "empty plastic deodorant stick"
+      ]
+    },
+    {
+      "index": 142,
+      "id": 143,
+      "name_it": "Detersivo (contenitore in cartone)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "cardboard laundry detergent box",
+        "washing powder cardboard box"
+      ]
+    },
+    {
+      "index": 143,
+      "id": 144,
+      "name_it": "Detersivo (contenitore vuoto e risciacquato)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty rinsed laundry detergent bottle",
+        "empty dish soap plastic bottle"
+      ]
+    },
+    {
+      "index": 144,
+      "id": 145,
+      "name_it": "Deumidificatori",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "electric dehumidifier",
+        "portable room dehumidifier"
+      ]
+    },
+    {
+      "index": 145,
+      "id": 146,
+      "name_it": "Dischetti per computer / DVD",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "computer disk",
+        "DVD or CD-R disc"
+      ]
+    },
+    {
+      "index": 146,
+      "id": 147,
+      "name_it": "Dischi in vinile",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "vinyl LP record",
+        "black phonograph record"
+      ]
+    },
+    {
+      "index": 147,
+      "id": 148,
+      "name_it": "Disinfettante",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bottle of disinfectant",
+        "antiseptic liquid bottle"
+      ]
+    },
+    {
+      "index": 148,
+      "id": 149,
+      "name_it": "Divano",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "sofa",
+        "couch furniture"
+      ]
+    },
+    {
+      "index": 149,
+      "id": 150,
+      "name_it": "Elastici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "rubber bands",
+        "elastic hair tie"
+      ]
+    },
+    {
+      "index": 150,
+      "id": 151,
+      "name_it": "Elettrodomestici",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "home appliance",
+        "microwave toaster or kitchen appliance"
+      ]
+    },
+    {
+      "index": 151,
+      "id": 152,
+      "name_it": "Erba",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "grass clippings",
+        "cut lawn grass"
+      ]
+    },
+    {
+      "index": 152,
+      "id": 153,
+      "name_it": "Escrementi di animali domestici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "pet waste",
+        "dog poop bag"
+      ]
+    },
+    {
+      "index": 153,
+      "id": 154,
+      "name_it": "Eternit",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "eternit asbestos sheet",
+        "corrugated fiber cement roof panel"
+      ]
+    },
+    {
+      "index": 154,
+      "id": 155,
+      "name_it": "Etichette adesive e di indumenti",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "adhesive sticker",
+        "clothing fabric tag",
+        "sticky label"
+      ]
+    },
+    {
+      "index": 155,
+      "id": 156,
+      "name_it": "Etichette carta",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper tag",
+        "cardboard price label"
+      ]
+    },
+    {
+      "index": 156,
+      "id": 157,
+      "name_it": "Evidenziatori",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "highlighter marker pen",
+        "fluorescent felt-tip pen"
+      ]
+    },
+    {
+      "index": 157,
+      "id": 158,
+      "name_it": "Farmaci",
+      "bin_id": 4,
+      "bin_label": "FARMACIA",
+      "prompts_en": [
+        "medicine box",
+        "pills and tablets",
+        "pharmaceutical drugs"
+      ]
+    },
+    {
+      "index": 158,
+      "id": 159,
+      "name_it": "Fascette ad uso imballaggio",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic zip ties",
+        "packaging cable ties",
+        "plastic packing strap"
+      ]
+    },
+    {
+      "index": 159,
+      "id": 160,
+      "name_it": "Fazoletti di carta (asciugamani)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper hand towel",
+        "folded paper towel"
+      ]
+    },
+    {
+      "index": 160,
+      "id": 161,
+      "name_it": "Fazzoletti di carta (bianco e colorato, sporto e pulito)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "paper tissue",
+        "facial tissue handkerchief",
+        "crumpled kleenex tissue"
+      ]
+    },
+    {
+      "index": 161,
+      "id": 162,
+      "name_it": "Feltrini",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "adhesive furniture felt pads",
+        "felt floor protectors"
+      ]
+    },
+    {
+      "index": 162,
+      "id": 163,
+      "name_it": "Ferro (oggetti)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "scrap iron object",
+        "metal iron tool or bar"
+      ]
+    },
+    {
+      "index": 163,
+      "id": 164,
+      "name_it": "Ferro da stiro",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clothes steam iron",
+        "electric flat iron"
+      ]
+    },
+    {
+      "index": 164,
+      "id": 165,
+      "name_it": "Fiala in plastica",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic ampoule",
+        "single-dose plastic saline vial"
+      ]
+    },
+    {
+      "index": 165,
+      "id": 166,
+      "name_it": "Fiala in vetro",
+      "bin_id": 8,
+      "bin_label": "VETRO",
+      "prompts_en": [
+        "glass vial",
+        "small glass ampoule bottle"
+      ]
+    },
+    {
+      "index": 166,
+      "id": 167,
+      "name_it": "Fiammiferi",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "wooden matches",
+        "matchstick"
+      ]
+    },
+    {
+      "index": 167,
+      "id": 168,
+      "name_it": "Fili elettrici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "short electrical wire",
+        "thin copper wire piece"
+      ]
+    },
+    {
+      "index": 168,
+      "id": 169,
+      "name_it": "Fili elettrici (se in grandi quanità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bundle of electrical wires",
+        "large coil of cables"
+      ]
+    },
+    {
+      "index": 169,
+      "id": 170,
+      "name_it": "Film in plastica (cellophane)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic wrap",
+        "stretch cling film",
+        "cellophane food wrap"
+      ]
+    },
+    {
+      "index": 170,
+      "id": 171,
+      "name_it": "Film in plastica (pellicola - cellophane maggiore di 60x40 cm)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic sheeting",
+        "big roll of polyethylene film"
+      ]
+    },
+    {
+      "index": 171,
+      "id": 172,
+      "name_it": "Filo interdentale",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "dental floss",
+        "floss string"
+      ]
+    },
+    {
+      "index": 172,
+      "id": 173,
+      "name_it": "Filtri da tè e caffè",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "tea bag",
+        "paper coffee filter",
+        "used tea bag"
+      ]
+    },
+    {
+      "index": 173,
+      "id": 174,
+      "name_it": "Filtri olio motore",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "car motor oil filter",
+        "automotive oil filter canister"
+      ]
+    },
+    {
+      "index": 174,
+      "id": 175,
+      "name_it": "Finestra (max 30 Kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden or PVC window frame",
+        "glass window"
+      ]
+    },
+    {
+      "index": 175,
+      "id": 176,
+      "name_it": "Fiori finti",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "artificial plastic flowers",
+        "fake silk flower bouquet"
+      ]
+    },
+    {
+      "index": 176,
+      "id": 177,
+      "name_it": "Fiori secchi e/o recisi",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "fresh or dried cut flowers",
+        "wilted flower bouquet"
+      ]
+    },
+    {
+      "index": 177,
+      "id": 178,
+      "name_it": "Fiori secchi e/o recisi (se grandi)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large bunch of dried flowers or garden branches"
+      ]
+    },
+    {
+      "index": 178,
+      "id": 179,
+      "name_it": "Fitofarmaci",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "garden fungicide bottle",
+        "herbicide weed killer bottle"
+      ]
+    },
+    {
+      "index": 179,
+      "id": 181,
+      "name_it": "Flaconi e bottiglie in plastica (capacità max 5 lt)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic detergent bottle",
+        "large plastic bottle up to 5 liters"
+      ]
+    },
+    {
+      "index": 180,
+      "id": 180,
+      "name_it": "Flaconi in plastica",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic squeeze bottle",
+        "shampoo bottle",
+        "cleaning spray bottle"
+      ]
+    },
+    {
+      "index": 181,
+      "id": 182,
+      "name_it": "Floppy disk",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "floppy disk",
+        "3.5 inch computer diskette"
+      ]
+    },
+    {
+      "index": 182,
+      "id": 183,
+      "name_it": "Foderine in plastica per libri e quaderni",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic book cover",
+        "clear plastic notebook sleeve"
+      ]
+    },
+    {
+      "index": 183,
+      "id": 184,
+      "name_it": "Fogli di carta/cartone",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "white paper sheets",
+        "printed office paper",
+        "cardboard sheet"
+      ]
+    },
+    {
+      "index": 184,
+      "id": 185,
+      "name_it": "Fondi di caffè",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "coffee grounds",
+        "used espresso coffee puck"
+      ]
+    },
+    {
+      "index": 185,
+      "id": 186,
+      "name_it": "Forbici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "scissors",
+        "pair of metal shears"
+      ]
+    },
+    {
+      "index": 186,
+      "id": 187,
+      "name_it": "Fotografia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "printed glossy photograph",
+        "polaroid photo print"
+      ]
+    },
+    {
+      "index": 187,
+      "id": 188,
+      "name_it": "Frigorifero",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "refrigerator",
+        "fridge freezer appliance"
+      ]
+    },
+    {
+      "index": 188,
+      "id": 189,
+      "name_it": "Frutta",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "fresh fruit",
+        "banana peel",
+        "apple core",
+        "orange peel"
+      ]
+    },
+    {
+      "index": 189,
+      "id": 190,
+      "name_it": "Fusti in plastica o in acciaiorigenerati (capacità max 5 lt)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic or steel mini drum up to 5 liters",
+        "metal paint or oil tin can"
+      ]
+    },
+    {
+      "index": 190,
+      "id": 191,
+      "name_it": "Gancio per chiudere i sacchetti",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic bread clip",
+        "bag closure clip",
+        "twist tie"
+      ]
+    },
+    {
+      "index": 191,
+      "id": 192,
+      "name_it": "Garze/bende",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "medical gauze",
+        "rolled cotton bandage"
+      ]
+    },
+    {
+      "index": 192,
+      "id": 193,
+      "name_it": "Giocattolo",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small plastic toy",
+        "action figure",
+        "toy car"
+      ]
+    },
+    {
+      "index": 193,
+      "id": 194,
+      "name_it": "Giocattolo in plastica (grandi dimensioni o elettronico)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic toy",
+        "electronic battery-powered toy"
+      ]
+    },
+    {
+      "index": 194,
+      "id": 195,
+      "name_it": "Giornale",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "newspaper",
+        "folded daily newspaper"
+      ]
+    },
+    {
+      "index": 195,
+      "id": 196,
+      "name_it": "Gomma",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "rubber piece",
+        "synthetic rubber mat or scrap"
+      ]
+    },
+    {
+      "index": 196,
+      "id": 197,
+      "name_it": "Gomma da cancellare",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "pencil eraser",
+        "white school rubber eraser"
+      ]
+    },
+    {
+      "index": 197,
+      "id": 198,
+      "name_it": "Gomma da masticare",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "chewing gum",
+        "bubble gum"
+      ]
+    },
+    {
+      "index": 198,
+      "id": 199,
+      "name_it": "Gommapiuma",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "foam rubber sponge",
+        "polyurethane foam cushion padding"
+      ]
+    },
+    {
+      "index": 199,
+      "id": 200,
+      "name_it": "Graffe - punti metallici",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "metal staples",
+        "paper clips and staples"
+      ]
+    },
+    {
+      "index": 200,
+      "id": 201,
+      "name_it": "Grattugia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "metal cheese grater",
+        "kitchen box grater"
+      ]
+    },
+    {
+      "index": 201,
+      "id": 202,
+      "name_it": "Guanti in gomma",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "yellow rubber dishwashing gloves",
+        "household rubber gloves"
+      ]
+    },
+    {
+      "index": 202,
+      "id": 203,
+      "name_it": "Guanti in nitrile/lattice",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable nitrile gloves",
+        "blue latex medical gloves"
+      ]
+    },
+    {
+      "index": 203,
+      "id": 204,
+      "name_it": "Guanti in pelle o lana",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "leather winter gloves",
+        "knitted wool gloves"
+      ]
+    },
+    {
+      "index": 204,
+      "id": 205,
+      "name_it": "Guarnizioni",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "rubber gasket",
+        "o-ring seal"
+      ]
+    },
+    {
+      "index": 205,
+      "id": 206,
+      "name_it": "Guarnizioni in amianto",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "asbestos gasket",
+        "industrial asbestos rope seal"
+      ]
+    },
+    {
+      "index": 206,
+      "id": 207,
+      "name_it": "Gusci di frutta secca e di uova",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "walnut shells",
+        "pistachio shells",
+        "eggshells"
+      ]
+    },
+    {
+      "index": 207,
+      "id": 208,
+      "name_it": "Gusci di molluschi e crostacei",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "mussel shells",
+        "clam shells",
+        "oyster or shrimp shells"
+      ]
+    },
+    {
+      "index": 208,
+      "id": 211,
+      "name_it": "Imballaggi (in plastica, metallo/alluminio)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic packaging",
+        "metal food packaging",
+        "aluminum packaging"
+      ]
+    },
+    {
+      "index": 209,
+      "id": 212,
+      "name_it": "Imballaggi (in polistirolo)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "styrofoam packaging",
+        "white expanded polystyrene foam blocks"
+      ]
+    },
+    {
+      "index": 210,
+      "id": 213,
+      "name_it": "Imballaggi contaminati da sostanze pericolose",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "hazardous chemical container",
+        "bottle with skull or flame warning label"
+      ]
+    },
+    {
+      "index": 211,
+      "id": 209,
+      "name_it": "Imballaggi in cartone",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "cardboard shipping box",
+        "brown cardboard packaging box"
+      ]
+    },
+    {
+      "index": 212,
+      "id": 210,
+      "name_it": "Imballaggi in cartone (se grandi)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large bulky cardboard boxes",
+        "appliance cardboard box"
+      ]
+    },
+    {
+      "index": 213,
+      "id": 214,
+      "name_it": "Impregnante",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wood stain can",
+        "wood preservative paint tin"
+      ]
+    },
+    {
+      "index": 214,
+      "id": 215,
+      "name_it": "Inerti (max 30 Kg/giorno e 5 volte anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "stones gravel and concrete rubble",
+        "inert building debris"
+      ]
+    },
+    {
+      "index": 215,
+      "id": 216,
+      "name_it": "Juta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "burlap jute sack",
+        "jute twine rope"
+      ]
+    },
+    {
+      "index": 216,
+      "id": 217,
+      "name_it": "Lacche (contenitore non vuoto e pericoloso)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "hairspray can with hazard symbol",
+        "full varnish or lacquer spray can"
+      ]
+    },
+    {
+      "index": 217,
+      "id": 218,
+      "name_it": "Lacche (contenitore vuoto e non pericoloso)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty non-hazardous hairspray bottle",
+        "empty lacquer container"
+      ]
+    },
+    {
+      "index": 218,
+      "id": 219,
+      "name_it": "Lacci per scarpe",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "shoelaces",
+        "shoe strings"
+      ]
+    },
+    {
+      "index": 219,
+      "id": 220,
+      "name_it": "Lametta usa e getta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable razor blade",
+        "safety razor blade"
+      ]
+    },
+    {
+      "index": 220,
+      "id": 221,
+      "name_it": "Lamiera",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "sheet metal",
+        "corrugated steel metal sheet"
+      ]
+    },
+    {
+      "index": 221,
+      "id": 222,
+      "name_it": "Lampada da tavolo o da terra",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "table lamp",
+        "floor standing lamp",
+        "desk lamp"
+      ]
+    },
+    {
+      "index": 222,
+      "id": 223,
+      "name_it": "Lampadario",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "chandelier",
+        "ceiling pendant light fixture"
+      ]
+    },
+    {
+      "index": 223,
+      "id": 224,
+      "name_it": "Lampadina a fluorescenza (a basso consumo, neon)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "compact fluorescent light bulb",
+        "CFL energy saving bulb",
+        "LED or neon lamp"
+      ]
+    },
+    {
+      "index": 224,
+      "id": 225,
+      "name_it": "Lampadina a incandescenza",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "incandescent glass light bulb",
+        "halogen light bulb"
+      ]
+    },
+    {
+      "index": 225,
+      "id": 226,
+      "name_it": "Lana di roccia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small piece of mineral rock wool insulation"
+      ]
+    },
+    {
+      "index": 226,
+      "id": 227,
+      "name_it": "Lana di roccia (se grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large rolls of rock wool insulation"
+      ]
+    },
+    {
+      "index": 227,
+      "id": 228,
+      "name_it": "Lastra di vetro",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small broken glass pane",
+        "flat window glass sheet"
+      ]
+    },
+    {
+      "index": 228,
+      "id": 229,
+      "name_it": "Lastra di vetro (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large glass pane",
+        "big glass tabletop or window sheet"
+      ]
+    },
+    {
+      "index": 229,
+      "id": 230,
+      "name_it": "Lattine (in alluminio/banda stagnata)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "aluminum soda can",
+        "beer can",
+        "tin food can"
+      ]
+    },
+    {
+      "index": 230,
+      "id": 231,
+      "name_it": "Lavastoviglie/Lavatrice",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "washing machine",
+        "dishwasher appliance"
+      ]
+    },
+    {
+      "index": 231,
+      "id": 233,
+      "name_it": "Lenti di occhiali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "eyeglass lenses",
+        "broken spectacles lens"
+      ]
+    },
+    {
+      "index": 232,
+      "id": 232,
+      "name_it": "Lenti d’ingrandimento",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "magnifying glass",
+        "handheld lens"
+      ]
+    },
+    {
+      "index": 233,
+      "id": 235,
+      "name_it": "Lenzuola",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "torn worn-out bed sheets",
+        "old ruined bed linen"
+      ]
+    },
+    {
+      "index": 234,
+      "id": 234,
+      "name_it": "Lenzuola (in buono stato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clean folded bed sheets",
+        "cotton bed linen in good condition"
+      ]
+    },
+    {
+      "index": 235,
+      "id": 236,
+      "name_it": "Lettiera naturale per animali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "natural wooden pellet cat litter",
+        "biodegradable pet litter"
+      ]
+    },
+    {
+      "index": 236,
+      "id": 237,
+      "name_it": "Lettiera sintetica per animali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "clay or silica cat litter",
+        "synthetic clumping kitty litter"
+      ]
+    },
+    {
+      "index": 237,
+      "id": 238,
+      "name_it": "Libri",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paperback book",
+        "hardcover books",
+        "stack of books"
+      ]
+    },
+    {
+      "index": 238,
+      "id": 239,
+      "name_it": "Lische di pesce",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "fish bones",
+        "fish skeleton scraps"
+      ]
+    },
+    {
+      "index": 239,
+      "id": 240,
+      "name_it": "Lucida scarpe",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "shoe polish tin",
+        "leather shoe cream"
+      ]
+    },
+    {
+      "index": 240,
+      "id": 241,
+      "name_it": "Lumini con candela",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "votive candle in plastic holder",
+        "cemetery wax candle"
+      ]
+    },
+    {
+      "index": 241,
+      "id": 242,
+      "name_it": "Lumini elettrici",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "electric LED votive candle",
+        "battery-powered cemetery light"
+      ]
+    },
+    {
+      "index": 242,
+      "id": 243,
+      "name_it": "Macchina da cucire",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "sewing machine",
+        "electric home sewing machine"
+      ]
+    },
+    {
+      "index": 243,
+      "id": 244,
+      "name_it": "Macchina fotografica",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "digital camera",
+        "DSLR or point-and-shoot photo camera"
+      ]
+    },
+    {
+      "index": 244,
+      "id": 245,
+      "name_it": "Macinini meccanici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "manual coffee grinder",
+        "pepper mill grinder"
+      ]
+    },
+    {
+      "index": 245,
+      "id": 246,
+      "name_it": "Mascherine protettive",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "surgical face mask",
+        "FFP2 medical protective mask"
+      ]
+    },
+    {
+      "index": 246,
+      "id": 247,
+      "name_it": "Mastice e relativo contenitore",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "silicone caulk tube",
+        "putty mastic tub"
+      ]
+    },
+    {
+      "index": 247,
+      "id": 248,
+      "name_it": "Materasso",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bed mattress",
+        "foam or spring mattress"
+      ]
+    },
+    {
+      "index": 248,
+      "id": 249,
+      "name_it": "Matita",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wooden pencil",
+        "colored pencils"
+      ]
+    },
+    {
+      "index": 249,
+      "id": 250,
+      "name_it": "Mattoni/mattonelle in ceramica (grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large pile of bricks and ceramic tiles",
+        "construction tile waste"
+      ]
+    },
+    {
+      "index": 250,
+      "id": 251,
+      "name_it": "Mattoni/mattonelle in ceramica (in modestà quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "few ceramic tiles",
+        "broken red clay bricks"
+      ]
+    },
+    {
+      "index": 251,
+      "id": 252,
+      "name_it": "Medicine scadute",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "expired medicines",
+        "old pill bottles and medication packs"
+      ]
+    },
+    {
+      "index": 252,
+      "id": 253,
+      "name_it": "Metro in legno e/o metallo e/o plastica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "measuring tape",
+        "wooden folding ruler",
+        "plastic ruler"
+      ]
+    },
+    {
+      "index": 253,
+      "id": 254,
+      "name_it": "Mobili in legno",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden furniture",
+        "wooden table cabinet or dresser"
+      ]
+    },
+    {
+      "index": 254,
+      "id": 255,
+      "name_it": "Moka per il caffè",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "moka espresso coffee pot",
+        "aluminum stovetop coffee maker"
+      ]
+    },
+    {
+      "index": 255,
+      "id": 256,
+      "name_it": "Mollette",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "clothespins",
+        "plastic or wooden laundry pegs"
+      ]
+    },
+    {
+      "index": 256,
+      "id": 257,
+      "name_it": "Monitor del computer",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "computer monitor",
+        "LCD desktop screen"
+      ]
+    },
+    {
+      "index": 257,
+      "id": 258,
+      "name_it": "Moquette (grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large rolled wall-to-wall carpet",
+        "big moquette flooring"
+      ]
+    },
+    {
+      "index": 258,
+      "id": 259,
+      "name_it": "Moquette (max 30 kg/giornoe 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "piece of carpet flooring",
+        "small moquette rug"
+      ]
+    },
+    {
+      "index": 259,
+      "id": 260,
+      "name_it": "Morsa",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "metal bench vise",
+        "workshop clamp vise"
+      ]
+    },
+    {
+      "index": 260,
+      "id": 261,
+      "name_it": "Mozzicone di sigaretta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "cigarette butt",
+        "smoked cigarette filter"
+      ]
+    },
+    {
+      "index": 261,
+      "id": 262,
+      "name_it": "Musicassette",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "audio cassette tape",
+        "retro music cassette"
+      ]
+    },
+    {
+      "index": 262,
+      "id": 263,
+      "name_it": "Nastro adesivo",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "adhesive tape roll",
+        "scotch tape",
+        "duct tape"
+      ]
+    },
+    {
+      "index": 263,
+      "id": 264,
+      "name_it": "Nastro per regali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "gift wrapping ribbon",
+        "curling decorative bow"
+      ]
+    },
+    {
+      "index": 264,
+      "id": 265,
+      "name_it": "Negativi fotografici",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "photographic film negatives",
+        "35mm film strip"
+      ]
+    },
+    {
+      "index": 265,
+      "id": 266,
+      "name_it": "Neon",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "fluorescent neon light tube",
+        "long glass fluorescent tube"
+      ]
+    },
+    {
+      "index": 266,
+      "id": 268,
+      "name_it": "Nylon da imaballaggi leggeri (grandi dimensioni)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large nylon plastic tarp",
+        "big plastic packaging sheet"
+      ]
+    },
+    {
+      "index": 267,
+      "id": 267,
+      "name_it": "Nylon da imaballaggi leggeri (max 40x60 cm)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "small nylon packaging bag",
+        "clear plastic wrap"
+      ]
+    },
+    {
+      "index": 268,
+      "id": 269,
+      "name_it": "Occhiali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "eyeglasses",
+        "sunglasses",
+        "spectacles"
+      ]
+    },
+    {
+      "index": 269,
+      "id": 270,
+      "name_it": "Olio alimentare usato",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "used cooking oil bottle",
+        "bottle of frying vegetable oil"
+      ]
+    },
+    {
+      "index": 270,
+      "id": 271,
+      "name_it": "Olio per le automobili",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "motor oil jug",
+        "used automotive engine oil bottle"
+      ]
+    },
+    {
+      "index": 271,
+      "id": 272,
+      "name_it": "Ombrello e ombrellone",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "umbrella",
+        "broken rain umbrella",
+        "beach sun umbrella"
+      ]
+    },
+    {
+      "index": 272,
+      "id": 273,
+      "name_it": "Ossi (avanzi di cibo)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "meat bones",
+        "chicken bones",
+        "leftover food bones"
+      ]
+    },
+    {
+      "index": 273,
+      "id": 274,
+      "name_it": "Ovatta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "cotton batting",
+        "absorbent cotton wool roll"
+      ]
+    },
+    {
+      "index": 274,
+      "id": 275,
+      "name_it": "Pacchetto di sigarette (senza pellicola trasparente ne alluminio)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "empty paper cigarette pack",
+        "cardboard cigarette box"
+      ]
+    },
+    {
+      "index": 275,
+      "id": 276,
+      "name_it": "Paglia",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "dry straw",
+        "hay"
+      ]
+    },
+    {
+      "index": 276,
+      "id": 277,
+      "name_it": "Palettine del caffè",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic coffee stirrer",
+        "espresso stirring stick"
+      ]
+    },
+    {
+      "index": 277,
+      "id": 278,
+      "name_it": "Pallone da gioco",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "soccer ball",
+        "basketball",
+        "inflatable play ball"
+      ]
+    },
+    {
+      "index": 278,
+      "id": 279,
+      "name_it": "Pane",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "bread",
+        "stale bread loaf",
+        "bread crumbs and crust"
+      ]
+    },
+    {
+      "index": 279,
+      "id": 280,
+      "name_it": "Pannolini",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable baby diaper",
+        "used nappy"
+      ]
+    },
+    {
+      "index": 280,
+      "id": 281,
+      "name_it": "Pellicole in plastica per alimenti",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic cling film",
+        "food plastic wrap"
+      ]
+    },
+    {
+      "index": 281,
+      "id": 282,
+      "name_it": "Peluches",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "stuffed animal",
+        "plush teddy bear toy"
+      ]
+    },
+    {
+      "index": 282,
+      "id": 283,
+      "name_it": "Penna e pennarello",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "ballpoint pen",
+        "felt-tip marker pen",
+        "sharpie"
+      ]
+    },
+    {
+      "index": 283,
+      "id": 284,
+      "name_it": "Pennello",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "paint brush",
+        "bristle painting brush"
+      ]
+    },
+    {
+      "index": 284,
+      "id": 285,
+      "name_it": "Pentola",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "metal cooking pot",
+        "frying pan",
+        "stainless steel saucepan"
+      ]
+    },
+    {
+      "index": 285,
+      "id": 286,
+      "name_it": "Persiana (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "window shutter",
+        "wooden or aluminum louvered shutters"
+      ]
+    },
+    {
+      "index": 286,
+      "id": 287,
+      "name_it": "Pesce",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "raw or cooked fish scraps",
+        "fish leftovers"
+      ]
+    },
+    {
+      "index": 287,
+      "id": 288,
+      "name_it": "Pettine in legno e/o plastica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "hair comb",
+        "plastic or wooden comb"
+      ]
+    },
+    {
+      "index": 288,
+      "id": 289,
+      "name_it": "Piante",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "potted houseplant",
+        "dead leaves and small plants"
+      ]
+    },
+    {
+      "index": 289,
+      "id": 290,
+      "name_it": "Piante (se grandi quanità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large garden plants",
+        "potted shrubs and bushes"
+      ]
+    },
+    {
+      "index": 290,
+      "id": 292,
+      "name_it": "Piastrelle (grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "large stack of ceramic tiles",
+        "renovation tile debris"
+      ]
+    },
+    {
+      "index": 291,
+      "id": 291,
+      "name_it": "Piastrelle (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "few ceramic floor tiles",
+        "broken bathroom tiles"
+      ]
+    },
+    {
+      "index": 292,
+      "id": 293,
+      "name_it": "Piatti biodegradabili in mater bi (conformi norma UNI EN 13432:2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "compostable biodegradable plate",
+        "mater-bi eco plate"
+      ]
+    },
+    {
+      "index": 293,
+      "id": 294,
+      "name_it": "Piatti in ceramica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "ceramic dinner plate",
+        "broken porcelain plate"
+      ]
+    },
+    {
+      "index": 294,
+      "id": 295,
+      "name_it": "Piatti in ceramica (se grandi quanità più di 12pz)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large stack of ceramic plates",
+        "many porcelain dishes"
+      ]
+    },
+    {
+      "index": 295,
+      "id": 296,
+      "name_it": "Piatti in plastica usa e getta",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "disposable plastic plate",
+        "white plastic picnic plate"
+      ]
+    },
+    {
+      "index": 296,
+      "id": 297,
+      "name_it": "Pile",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "batteries",
+        "AA AAA 9V household batteries"
+      ]
+    },
+    {
+      "index": 297,
+      "id": 298,
+      "name_it": "Piscina gonfiabile per bambini",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "inflatable kiddie pool",
+        "plastic children swimming pool"
+      ]
+    },
+    {
+      "index": 298,
+      "id": 299,
+      "name_it": "Piume",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "bird feathers",
+        "down feathers"
+      ]
+    },
+    {
+      "index": 299,
+      "id": 300,
+      "name_it": "Piumino (coperta o giubbino)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "down puffer jacket",
+        "duvet quilt comforter"
+      ]
+    },
+    {
+      "index": 300,
+      "id": 301,
+      "name_it": "Pluribolle in plastica da imballo",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "bubble wrap",
+        "plastic air bubble packaging sheet"
+      ]
+    },
+    {
+      "index": 301,
+      "id": 302,
+      "name_it": "Pneumatici",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "rubber tires",
+        "stack of car tires"
+      ]
+    },
+    {
+      "index": 302,
+      "id": 303,
+      "name_it": "Polistirolo da edilizia (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "construction styrofoam board",
+        "building polystyrene insulation panel"
+      ]
+    },
+    {
+      "index": 303,
+      "id": 305,
+      "name_it": "Polistirolo da imballaggi",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "packaging styrofoam",
+        "white foam packing peanuts and corners"
+      ]
+    },
+    {
+      "index": 304,
+      "id": 304,
+      "name_it": "Polistirono da isolazione",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "insulation foam board",
+        "XPS extruded polystyrene panels"
+      ]
+    },
+    {
+      "index": 305,
+      "id": 306,
+      "name_it": "Poltrona",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "armchair",
+        "upholstered lounge chair"
+      ]
+    },
+    {
+      "index": 306,
+      "id": 307,
+      "name_it": "Porcellana",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "porcelain figurine",
+        "white china porcelain ware"
+      ]
+    },
+    {
+      "index": 307,
+      "id": 308,
+      "name_it": "Porta (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden interior door",
+        "house door panel"
+      ]
+    },
+    {
+      "index": 308,
+      "id": 310,
+      "name_it": "Posate in accaio",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "stainless steel cutlery",
+        "metal fork knife and spoon"
+      ]
+    },
+    {
+      "index": 309,
+      "id": 311,
+      "name_it": "Posate in accaio (se di grandi quantità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large set of metal cutlery",
+        "many steel forks knives and spoons"
+      ]
+    },
+    {
+      "index": 310,
+      "id": 309,
+      "name_it": "Posate in materiale biodegradabile (conformi norma UNI EN 13432:2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "compostable biodegradable cutlery",
+        "eco-friendly mater-bi fork and spoon"
+      ]
+    },
+    {
+      "index": 311,
+      "id": 312,
+      "name_it": "Posate in plastica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable plastic fork knife and spoon",
+        "plastic cutlery"
+      ]
+    },
+    {
+      "index": 312,
+      "id": 313,
+      "name_it": "Preservativi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "condom",
+        "latex contraceptive wrapper"
+      ]
+    },
+    {
+      "index": 313,
+      "id": 314,
+      "name_it": "Profumatori d'ambiente non ricaricabili",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic air freshener",
+        "non-refillable room fragrance diffuser"
+      ]
+    },
+    {
+      "index": 314,
+      "id": 315,
+      "name_it": "Profumi (contenitore vuoto)",
+      "bin_id": 8,
+      "bin_label": "VETRO",
+      "prompts_en": [
+        "empty glass perfume bottle",
+        "cologne glass bottle"
+      ]
+    },
+    {
+      "index": 315,
+      "id": 316,
+      "name_it": "Quaderno",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "spiral notebook",
+        "school exercise book"
+      ]
+    },
+    {
+      "index": 316,
+      "id": 317,
+      "name_it": "Quadro",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "framed painting",
+        "wall art picture frame"
+      ]
+    },
+    {
+      "index": 317,
+      "id": 318,
+      "name_it": "Radio",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "portable radio",
+        "FM AM radio stereo"
+      ]
+    },
+    {
+      "index": 318,
+      "id": 319,
+      "name_it": "Rafia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "raffia twine",
+        "natural raffia ribbon"
+      ]
+    },
+    {
+      "index": 319,
+      "id": 320,
+      "name_it": "Ramaglie",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "tree branches",
+        "pruned garden twigs and brushwood"
+      ]
+    },
+    {
+      "index": 320,
+      "id": 321,
+      "name_it": "Rasoi usa e getta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable plastic shaving razor",
+        "bic shaver"
+      ]
+    },
+    {
+      "index": 321,
+      "id": 322,
+      "name_it": "Recipienti gas da campeggio vuoti (in metallo)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty metal camping gas canister",
+        "pierced butane metal cartridge"
+      ]
+    },
+    {
+      "index": 322,
+      "id": 323,
+      "name_it": "Reggette per imballaggi",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "industrial packaging straps",
+        "plastic strapping roll"
+      ]
+    },
+    {
+      "index": 323,
+      "id": 324,
+      "name_it": "Reggette per legatura pacchi",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic parcel strapping band",
+        "box binding strap"
+      ]
+    },
+    {
+      "index": 324,
+      "id": 325,
+      "name_it": "Rete per frutta e verdura",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic mesh produce net",
+        "orange or lemon mesh bag"
+      ]
+    },
+    {
+      "index": 325,
+      "id": 326,
+      "name_it": "Rete per letto",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bed frame slatted base",
+        "metal bed spring frame"
+      ]
+    },
+    {
+      "index": 326,
+      "id": 327,
+      "name_it": "Rivista",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "glossy magazine",
+        "illustrated periodical magazine"
+      ]
+    },
+    {
+      "index": 327,
+      "id": 328,
+      "name_it": "Rottami metallici",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "scrap metal",
+        "iron pipes and metallic scrap"
+      ]
+    },
+    {
+      "index": 328,
+      "id": 329,
+      "name_it": "Rullino fotografico",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "35mm camera film roll",
+        "plastic film canister"
+      ]
+    },
+    {
+      "index": 329,
+      "id": 334,
+      "name_it": "Sacchetti in plastica biodegradabile (conformi norma UNI EN 13432:2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "biodegradable compostable trash bag",
+        "mater-bi organic waste bag"
+      ]
+    },
+    {
+      "index": 330,
+      "id": 335,
+      "name_it": "Sacchetti per aspirapolvere e polvere raccolta",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "vacuum cleaner dust bag",
+        "dust and dirt from vacuum"
+      ]
+    },
+    {
+      "index": 331,
+      "id": 330,
+      "name_it": "Sacchetto di carta",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "brown kraft paper bag",
+        "paper bakery bag"
+      ]
+    },
+    {
+      "index": 332,
+      "id": 331,
+      "name_it": "Sacchetto per alimenti in materiale accoppiato carta/alluminio (es. sacchetto biscotti)(salvo diversa indicazione sulla confezione)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "paper and foil lined biscuit bag",
+        "paper aluminum composite snack bag"
+      ]
+    },
+    {
+      "index": 333,
+      "id": 333,
+      "name_it": "Sacchetto per alimenti in materiale accoppiato plastica-alluminio (es. caffè, surgelati, patatine, salatini, involucri dei cioccolatini, ecc)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "shiny foil chip bag",
+        "coffee bag",
+        "frozen food pouch",
+        "chocolate wrapper"
+      ]
+    },
+    {
+      "index": 334,
+      "id": 332,
+      "name_it": "Sacchetto per alimento in plastica (pasta, insalata lavata)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic pasta bag",
+        "plastic salad bag",
+        "clear plastic food pouch"
+      ]
+    },
+    {
+      "index": 335,
+      "id": 336,
+      "name_it": "Salviette umidificate",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wet wipes",
+        "baby wipes",
+        "disinfectant moist towelettes"
+      ]
+    },
+    {
+      "index": 336,
+      "id": 338,
+      "name_it": "Sanitari in ceramica (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "ceramic toilet bowl",
+        "porcelain bathroom sink",
+        "bidet"
+      ]
+    },
+    {
+      "index": 337,
+      "id": 337,
+      "name_it": "Sanitari in ceramica (se grandi quantità)",
+      "bin_id": 3,
+      "bin_label": "DITTA SPECIALIZZATA",
+      "prompts_en": [
+        "multiple ceramic toilets and sinks",
+        "large quantity of bathroom ceramics"
+      ]
+    },
+    {
+      "index": 338,
+      "id": 339,
+      "name_it": "Sapone",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "bar of soap",
+        "hand soap"
+      ]
+    },
+    {
+      "index": 339,
+      "id": 340,
+      "name_it": "Scaffale in ferro o legno",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "metal shelving unit",
+        "wooden bookshelf"
+      ]
+    },
+    {
+      "index": 340,
+      "id": 341,
+      "name_it": "Scale",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "step ladder",
+        "aluminum folding ladder"
+      ]
+    },
+    {
+      "index": 341,
+      "id": 342,
+      "name_it": "Scarpe in buono stato",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clean sneakers",
+        "shoes in good condition",
+        "pair of leather shoes"
+      ]
+    },
+    {
+      "index": 342,
+      "id": 343,
+      "name_it": "Scarpe rotte o spaiate",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "worn-out broken shoes",
+        "single mismatched torn shoe"
+      ]
+    },
+    {
+      "index": 343,
+      "id": 344,
+      "name_it": "Scarti di cucina",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "kitchen food scraps",
+        "vegetable peelings",
+        "organic food waste"
+      ]
+    },
+    {
+      "index": 344,
+      "id": 346,
+      "name_it": "Scatola per pizza (con resti di cibo)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "greasy dirty pizza box with food stains",
+        "used pizza box with leftovers"
+      ]
+    },
+    {
+      "index": 345,
+      "id": 345,
+      "name_it": "Scatola per pizza (senza resta di cibo)",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "clean empty cardboard pizza box",
+        "pizza box without grease"
+      ]
+    },
+    {
+      "index": 346,
+      "id": 347,
+      "name_it": "Scatole o buste in plastica per confezionamenti capi di abbigliamento",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic garment bag",
+        "clear plastic shirt packaging box"
+      ]
+    },
+    {
+      "index": 347,
+      "id": 348,
+      "name_it": "Scatoloni in cartone",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large cardboard moving boxes",
+        "big shipping cartons"
+      ]
+    },
+    {
+      "index": 348,
+      "id": 349,
+      "name_it": "Schedine scommesse - gratta e vinci",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "scratch-off lottery ticket",
+        "betting slip"
+      ]
+    },
+    {
+      "index": 349,
+      "id": 350,
+      "name_it": "Sci",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "pair of skis",
+        "snowboard and ski poles"
+      ]
+    },
+    {
+      "index": 350,
+      "id": 351,
+      "name_it": "Scontrino in carta chimica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "paper thermal receipt",
+        "cash register store receipt"
+      ]
+    },
+    {
+      "index": 351,
+      "id": 352,
+      "name_it": "Scopa",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "floor broom",
+        "sweeping broom with bristles"
+      ]
+    },
+    {
+      "index": 352,
+      "id": 353,
+      "name_it": "Secchiello in plastica",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "plastic bucket",
+        "cleaning mop pail"
+      ]
+    },
+    {
+      "index": 353,
+      "id": 354,
+      "name_it": "Sedia",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden or plastic chair",
+        "dining chair",
+        "office chair"
+      ]
+    },
+    {
+      "index": 354,
+      "id": 355,
+      "name_it": "Segatura",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small pile of sawdust",
+        "wood shavings"
+      ]
+    },
+    {
+      "index": 355,
+      "id": 356,
+      "name_it": "Segatura (se grandi quanità)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large bag of sawdust",
+        "big pile of wood shavings"
+      ]
+    },
+    {
+      "index": 356,
+      "id": 357,
+      "name_it": "Seggiolino auto per bambini",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "baby car seat",
+        "child booster seat"
+      ]
+    },
+    {
+      "index": 357,
+      "id": 358,
+      "name_it": "Shoppers in carta",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper shopping bag with handles",
+        "boutique paper bag"
+      ]
+    },
+    {
+      "index": 358,
+      "id": 359,
+      "name_it": "Shoppers in plastica",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic shopping bag",
+        "plastic carrier bag"
+      ]
+    },
+    {
+      "index": 359,
+      "id": 360,
+      "name_it": "Sigarette",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "cigarettes",
+        "pack of cigarettes",
+        "tobacco cigarette"
+      ]
+    },
+    {
+      "index": 360,
+      "id": 361,
+      "name_it": "Siringhe",
+      "bin_id": 4,
+      "bin_label": "FARMACIA",
+      "prompts_en": [
+        "medical syringe",
+        "plastic hypodermic syringe"
+      ]
+    },
+    {
+      "index": 361,
+      "id": 362,
+      "name_it": "Solventi",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "paint thinner solvent can",
+        "chemical solvent bottle"
+      ]
+    },
+    {
+      "index": 362,
+      "id": 363,
+      "name_it": "Spazzole - spazzolini",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "toothbrush",
+        "hairbrush",
+        "scrub brush"
+      ]
+    },
+    {
+      "index": 363,
+      "id": 364,
+      "name_it": "Specchio",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wall mirror",
+        "glass hand mirror"
+      ]
+    },
+    {
+      "index": 364,
+      "id": 365,
+      "name_it": "Spugna",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "kitchen dish sponge",
+        "yellow scouring sponge"
+      ]
+    },
+    {
+      "index": 365,
+      "id": 366,
+      "name_it": "Stagnola pulita",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "clean aluminum foil",
+        "silver tin foil sheet"
+      ]
+    },
+    {
+      "index": 366,
+      "id": 367,
+      "name_it": "Stendino per biancheria",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "folding laundry drying rack",
+        "clothes horse"
+      ]
+    },
+    {
+      "index": 367,
+      "id": 368,
+      "name_it": "Stoffa - stracci",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "old cloth rags",
+        "torn fabric scrap",
+        "cleaning rag"
+      ]
+    },
+    {
+      "index": 368,
+      "id": 369,
+      "name_it": "Stoviglie in plastica monouso (solo cucchiaini, posate, cannucce, palettine per bevande)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "disposable plastic cutlery",
+        "plastic spoon fork and drinking straw",
+        "plastic coffee stirrer"
+      ]
+    },
+    {
+      "index": 369,
+      "id": 370,
+      "name_it": "Stoviglie in plastica monouso (solo piatti e bicchieri)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "disposable plastic plate and cup",
+        "single-use plastic tableware"
+      ]
+    },
+    {
+      "index": 370,
+      "id": 371,
+      "name_it": "Strumenti musicali",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small musical instrument",
+        "recorder flute harmonica or ukulele"
+      ]
+    },
+    {
+      "index": 371,
+      "id": 372,
+      "name_it": "Strumenti musicali (se grandi)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large musical instrument",
+        "guitar keyboard or drum kit"
+      ]
+    },
+    {
+      "index": 372,
+      "id": 373,
+      "name_it": "Stuzzicadenti",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "wooden toothpicks",
+        "bamboo cocktail skewers"
+      ]
+    },
+    {
+      "index": 373,
+      "id": 375,
+      "name_it": "Sughero finto o trattato",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "synthetic plastic wine cork",
+        "treated artificial cork stopper"
+      ]
+    },
+    {
+      "index": 374,
+      "id": 374,
+      "name_it": "Sughero vero",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "natural wine cork",
+        "real cork stopper"
+      ]
+    },
+    {
+      "index": 375,
+      "id": 376,
+      "name_it": "Sveglia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "mechanical alarm clock",
+        "wind-up bedside clock"
+      ]
+    },
+    {
+      "index": 376,
+      "id": 377,
+      "name_it": "Sveglia (elettrica)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "electric digital alarm clock",
+        "battery alarm clock"
+      ]
+    },
+    {
+      "index": 377,
+      "id": 378,
+      "name_it": "Tagliere (in legno e/o plastica)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "wooden cutting board",
+        "plastic kitchen chopping board"
+      ]
+    },
+    {
+      "index": 378,
+      "id": 379,
+      "name_it": "Taniche in plastica per uso domestico fino a 5 lt",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "plastic jerrycan up to 5 liters",
+        "5 liter plastic water jug"
+      ]
+    },
+    {
+      "index": 379,
+      "id": 380,
+      "name_it": "Taniche in plastica per uso domestico oltrna 5 lt e fino a 20 lt",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic jerrycan 10 to 20 liters",
+        "big plastic liquid canister"
+      ]
+    },
+    {
+      "index": 380,
+      "id": 381,
+      "name_it": "Tapparella (max 30 kg/giorno e 5 volte/anno)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "rolled window roller shutter",
+        "PVC or wooden shutter slats"
+      ]
+    },
+    {
+      "index": 381,
+      "id": 382,
+      "name_it": "Tappeti",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "area rug",
+        "woven floor carpet"
+      ]
+    },
+    {
+      "index": 382,
+      "id": 383,
+      "name_it": "Tappetini auto",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "rubber car floor mat",
+        "automotive carpet mat"
+      ]
+    },
+    {
+      "index": 383,
+      "id": 384,
+      "name_it": "Tappo (di barattolo in metallo e a corona)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "metal jar lid",
+        "metal beer bottle crown cap"
+      ]
+    },
+    {
+      "index": 384,
+      "id": 386,
+      "name_it": "Tappo (in sughero finto o trattato)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "synthetic plastic bottle stopper",
+        "artificial cork cap"
+      ]
+    },
+    {
+      "index": 385,
+      "id": 385,
+      "name_it": "Tappo (in sughero vero)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "natural cork bottle stopper",
+        "real wine cork"
+      ]
+    },
+    {
+      "index": 386,
+      "id": 387,
+      "name_it": "Tastiera del computer",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "computer keyboard",
+        "wireless PC keyboard"
+      ]
+    },
+    {
+      "index": 387,
+      "id": 388,
+      "name_it": "Tazzine in ceramica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "ceramic espresso cup",
+        "porcelain coffee mug"
+      ]
+    },
+    {
+      "index": 388,
+      "id": 389,
+      "name_it": "Telecomando",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "TV remote control",
+        "electronic remote controller"
+      ]
+    },
+    {
+      "index": 389,
+      "id": 390,
+      "name_it": "Telefono/telefonini",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "mobile phone",
+        "cordless landline telephone",
+        "smartphone"
+      ]
+    },
+    {
+      "index": 390,
+      "id": 391,
+      "name_it": "Televisore",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "flat screen television",
+        "TV set"
+      ]
+    },
+    {
+      "index": 391,
+      "id": 392,
+      "name_it": "Telo in nylon",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small nylon sheet",
+        "plastic tarp"
+      ]
+    },
+    {
+      "index": 392,
+      "id": 393,
+      "name_it": "Telo in nylon (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large nylon tarpaulin",
+        "big waterproof plastic cover"
+      ]
+    },
+    {
+      "index": 393,
+      "id": 394,
+      "name_it": "Tende",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "torn old window curtains",
+        "worn-out drapes"
+      ]
+    },
+    {
+      "index": 394,
+      "id": 395,
+      "name_it": "Tende (se in buono stato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clean window curtains in good condition",
+        "folded drapes"
+      ]
+    },
+    {
+      "index": 395,
+      "id": 396,
+      "name_it": "Termometro (a mercurio o elettrico)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "digital fever thermometer",
+        "glass mercury thermometer"
+      ]
+    },
+    {
+      "index": 396,
+      "id": 397,
+      "name_it": "Terriccio per piante",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "potting soil",
+        "plant dirt and compost earth"
+      ]
+    },
+    {
+      "index": 397,
+      "id": 398,
+      "name_it": "Tessili casalinghi (tende, tovaglie, tappeti)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "worn-out household textiles",
+        "old tablecloth curtains or rug"
+      ]
+    },
+    {
+      "index": 398,
+      "id": 399,
+      "name_it": "Tessili casalinghi (tende, tovaglie, tappeti)(se in buono stato)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "clean household textiles in good condition",
+        "folded tablecloth and curtains"
+      ]
+    },
+    {
+      "index": 399,
+      "id": 400,
+      "name_it": "Tovaglia in carta",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper tablecloth",
+        "disposable paper table cover"
+      ]
+    },
+    {
+      "index": 400,
+      "id": 401,
+      "name_it": "Tovagliolo in carta",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "paper napkin",
+        "used paper serviette"
+      ]
+    },
+    {
+      "index": 401,
+      "id": 402,
+      "name_it": "Trielina",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "bottle of stain remover solvent",
+        "trichloroethylene dry cleaning bottle"
+      ]
+    },
+    {
+      "index": 402,
+      "id": 403,
+      "name_it": "Trucchi",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "makeup cosmetics",
+        "eyeshadow mascara lipstick compact"
+      ]
+    },
+    {
+      "index": 403,
+      "id": 404,
+      "name_it": "Tubetti di alimenti (sporchi o con residui)",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "dirty food squeeze tube with residue",
+        "half-empty tomato paste tube"
+      ]
+    },
+    {
+      "index": 404,
+      "id": 405,
+      "name_it": "Tubetti di alimenti (vuoti e puliti)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty clean metal or plastic food tube",
+        "rinsed tomato paste tube"
+      ]
+    },
+    {
+      "index": 405,
+      "id": 406,
+      "name_it": "Tubetti di colore",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "empty paint tube",
+        "dried acrylic or watercolor paint tube"
+      ]
+    },
+    {
+      "index": 406,
+      "id": 407,
+      "name_it": "Tubetti di colore (pieni)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "full paint tube",
+        "oil or acrylic artist paint tube"
+      ]
+    },
+    {
+      "index": 407,
+      "id": 408,
+      "name_it": "Tubetti di dentifricio",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "toothpaste tube",
+        "empty squeezed toothpaste tube"
+      ]
+    },
+    {
+      "index": 408,
+      "id": 409,
+      "name_it": "Tubetti di maionese",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "mayonnaise squeeze tube",
+        "empty condiment tube"
+      ]
+    },
+    {
+      "index": 409,
+      "id": 410,
+      "name_it": "Tubo al neon",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "fluorescent neon light tube",
+        "long white glass lamp tube"
+      ]
+    },
+    {
+      "index": 410,
+      "id": 411,
+      "name_it": "Tubo ferro",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "iron metal pipe",
+        "steel tubing"
+      ]
+    },
+    {
+      "index": 411,
+      "id": 412,
+      "name_it": "Tubo in gomma",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "rubber hose pipe",
+        "black flexible rubber tube"
+      ]
+    },
+    {
+      "index": 412,
+      "id": 413,
+      "name_it": "Tubo in PVC",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "gray PVC plumbing pipe",
+        "rigid plastic pipe"
+      ]
+    },
+    {
+      "index": 413,
+      "id": 414,
+      "name_it": "Uova",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "eggs",
+        "raw eggs and broken eggshells"
+      ]
+    },
+    {
+      "index": 414,
+      "id": 415,
+      "name_it": "Valigia",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "small suitcase",
+        "carry-on travel bag"
+      ]
+    },
+    {
+      "index": 415,
+      "id": 416,
+      "name_it": "Valigia (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large hard-shell suitcase",
+        "big rolling luggage"
+      ]
+    },
+    {
+      "index": 416,
+      "id": 418,
+      "name_it": "Vaschetta in mater bi (conformi norma UNI EN 13432:2002)",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "compostable biodegradable food tray",
+        "mater-bi eco tray"
+      ]
+    },
+    {
+      "index": 417,
+      "id": 417,
+      "name_it": "Vaschetta per alimenti pulita (in plastica o alluminio/latta o in materiale accoppiato come plastica e alluminio)",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "clean plastic or aluminum food tray",
+        "empty supermarket meat or pasta tray"
+      ]
+    },
+    {
+      "index": 418,
+      "id": 419,
+      "name_it": "Vaschette e imballaggi di piccoli elettrodomestici in polistirolo espanso",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "white styrofoam electronics packaging tray",
+        "molded polystyrene box insert"
+      ]
+    },
+    {
+      "index": 419,
+      "id": 420,
+      "name_it": "Vaschette in materiale accoppiato",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "composite multi-layer food tray",
+        "paper-plastic laminated food tray"
+      ]
+    },
+    {
+      "index": 420,
+      "id": 421,
+      "name_it": "Vasetto yogurt vuoto",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "empty plastic yogurt cup",
+        "yogurt container pot",
+        "plastic dairy cup"
+      ]
+    },
+    {
+      "index": 421,
+      "id": 424,
+      "name_it": "Vaso in plastica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "plastic flower pot",
+        "decorative plastic planter"
+      ]
+    },
+    {
+      "index": 422,
+      "id": 425,
+      "name_it": "Vaso in plastica (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large plastic garden planter",
+        "big plastic plant pot"
+      ]
+    },
+    {
+      "index": 423,
+      "id": 426,
+      "name_it": "Vaso in plastica per piante da trapiantare",
+      "bin_id": 5,
+      "bin_label": "IMBALLAGGI LEGGERI",
+      "prompts_en": [
+        "thin black plastic nursery plant pot",
+        "disposable seedling transplant pot"
+      ]
+    },
+    {
+      "index": 424,
+      "id": 422,
+      "name_it": "Vaso in terracotta, vetro o ceramica",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "terracotta flower pot",
+        "ceramic or glass plant vase"
+      ]
+    },
+    {
+      "index": 425,
+      "id": 423,
+      "name_it": "Vaso in terracotta, vetro o ceramica (se grande)",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "large terracotta planter pot",
+        "big heavy ceramic garden vase"
+      ]
+    },
+    {
+      "index": 426,
+      "id": 427,
+      "name_it": "Verdura",
+      "bin_id": 6,
+      "bin_label": "ORGANICO",
+      "prompts_en": [
+        "fresh vegetables",
+        "vegetable scraps and peelings",
+        "lettuce carrot tomato"
+      ]
+    },
+    {
+      "index": 427,
+      "id": 428,
+      "name_it": "Videocassette",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "VHS videotape",
+        "black video cassette"
+      ]
+    },
+    {
+      "index": 428,
+      "id": 429,
+      "name_it": "Volantino senza imballo",
+      "bin_id": 1,
+      "bin_label": "CARTA E CARTONE",
+      "prompts_en": [
+        "paper flyer",
+        "supermarket advertising leaflet",
+        "pamphlet"
+      ]
+    },
+    {
+      "index": 429,
+      "id": 430,
+      "name_it": "Zaino",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "backpack",
+        "school rucksack"
+      ]
+    },
+    {
+      "index": 430,
+      "id": 431,
+      "name_it": "Zerbino",
+      "bin_id": 7,
+      "bin_label": "RESIDUO",
+      "prompts_en": [
+        "doormat",
+        "coir or rubber welcome mat"
+      ]
+    },
+    {
+      "index": 431,
+      "id": 432,
+      "name_it": "Zoccoli",
+      "bin_id": 2,
+      "bin_label": "CENTRO RACCOLTA",
+      "prompts_en": [
+        "wooden clogs",
+        "rubber garden clogs",
+        "crocs shoes"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pipeline/.venv/
+
+# macOS
+.DS_Store
+
+# Generated intermediate ML artifacts (final assets live in web/assets/)
+artifacts/
+
+# Large model caches
+*.pt
+*.pth
+*.safetensors
+.cache/

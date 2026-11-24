@@ -1,0 +1,4373 @@
+{
+  "schema_version": 1,
+  "comune": "Trento",
+  "utenza": "Domestica",
+  "source_url": "https://dolomitiambiente.it/it/trento/domestica/raccolta-differenziata/riciclabolario",
+  "pdf_url": "https://dolomitiambiente.it/files/modulistica/34/normal/260901_riciclabolario_web.pdf",
+  "scraped_at": "2026-11-24T07:48:25.646542+00:00",
+  "item_count": 432,
+  "bins": [
+    {
+      "id": 1,
+      "label": "CARTA E CARTONE",
+      "color_hex": "#5384c0"
+    },
+    {
+      "id": 2,
+      "label": "CENTRO RACCOLTA",
+      "color_hex": "#6d5d3f"
+    },
+    {
+      "id": 3,
+      "label": "DITTA SPECIALIZZATA",
+      "color_hex": "#6d5d3f"
+    },
+    {
+      "id": 4,
+      "label": "FARMACIA",
+      "color_hex": "#84b654"
+    },
+    {
+      "id": 5,
+      "label": "IMBALLAGGI LEGGERI",
+      "color_hex": "#f4c538"
+    },
+    {
+      "id": 6,
+      "label": "ORGANICO",
+      "color_hex": "#4e4f5d"
+    },
+    {
+      "id": 7,
+      "label": "RESIDUO",
+      "color_hex": "#0d698d"
+    },
+    {
+      "id": 8,
+      "label": "VETRO",
+      "color_hex": "#0d698d"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name_it": "Abbigliamento",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 2,
+      "name_it": "Accendino",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 6,
+      "name_it": "Accumulatori per auto",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 3,
+      "name_it": "Acetone - Acquaragia",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 4,
+      "name_it": "Acidi",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 5,
+      "name_it": "Acquaragia - Acetone (contenitore vuoto e risciacquato)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 7,
+      "name_it": "Addobbi natalizi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 8,
+      "name_it": "Aghi da siringa",
+      "bin_ids": [
+        4
+      ],
+      "bins": [
+        "FARMACIA"
+      ]
+    },
+    {
+      "id": 9,
+      "name_it": "Albero di Natale in materiale sintetico",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 10,
+      "name_it": "Albero di Natale in materiale sintetico (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 11,
+      "name_it": "Albero di Natale naturale",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 12,
+      "name_it": "Alcool (contenitore vuoto e risciacquato)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 13,
+      "name_it": "Alluminio (contenitore)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 14,
+      "name_it": "Amianto",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 15,
+      "name_it": "Ammoniaca (contenitore vuoto e risciacquato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 16,
+      "name_it": "Antiparassitari",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 17,
+      "name_it": "Antitarme",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 18,
+      "name_it": "Apparecchiature elettriche ed elettroniche",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 19,
+      "name_it": "Appendiabiti in legno",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 20,
+      "name_it": "Appendiabiti in legno (grandi quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 21,
+      "name_it": "Appendiabiti in plastica e in metallo",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 22,
+      "name_it": "Armadio",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 23,
+      "name_it": "Asciugacapelli",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 24,
+      "name_it": "Aspirapolvere",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 25,
+      "name_it": "Asse da stiro",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 26,
+      "name_it": "Assorbenti",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 27,
+      "name_it": "Astuccio",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 28,
+      "name_it": "Attaccapanni (ferro, legno, plastica)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 29,
+      "name_it": "Barattoli in metallo latta/plastica",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 30,
+      "name_it": "Barattoli in vetro",
+      "bin_ids": [
+        8
+      ],
+      "bins": [
+        "VETRO"
+      ]
+    },
+    {
+      "id": 31,
+      "name_it": "Bastoncini per caramelle \"lollipop\"",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 32,
+      "name_it": "Batterie d’auto",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 33,
+      "name_it": "Batterie esauste",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 34,
+      "name_it": "Batuffolo e bastoncini di cotone",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 35,
+      "name_it": "Biancheria intima",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 36,
+      "name_it": "Bicchiere biodegradabile in mater-bi (conformi normativa UNI EN 13432-2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 37,
+      "name_it": "Bicchiere in plastica monouso (pulito)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 38,
+      "name_it": "Bicchiere in vetro",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 39,
+      "name_it": "Biciclette",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 40,
+      "name_it": "Bigiotteria",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 41,
+      "name_it": "Biglia in vetro",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 42,
+      "name_it": "Blister in plastica e alluminio (vuoto)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 44,
+      "name_it": "Bombole del gas",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 45,
+      "name_it": "Bombole piccole da campeggio (vuote)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 43,
+      "name_it": "Bombolette spray (con simbolo: T e/o F)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 49,
+      "name_it": "Borse / Borsette",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 47,
+      "name_it": "Borse per la spesa riutilizzabili (in stoffa)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 48,
+      "name_it": "Borse per la spesa riutilizzabili (sintetiche)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 46,
+      "name_it": "Borse/buste di plastica per la spesa in mater-bi (conformi normativa UNI EN 13432-2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 51,
+      "name_it": "Bottiglia in vetro priva di tappo",
+      "bin_ids": [
+        8
+      ],
+      "bins": [
+        "VETRO"
+      ]
+    },
+    {
+      "id": 50,
+      "name_it": "Bottiglie in plastica",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 52,
+      "name_it": "Bottoni",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 53,
+      "name_it": "Box per bambini",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 56,
+      "name_it": "Busta in materiale accoppiato carta e plastica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 55,
+      "name_it": "Busta in materiale accoppiato plastica e alluminio",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 54,
+      "name_it": "Busta o incarto in materiale accoppiato (salvo diversa indicazione sulla confezione)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 58,
+      "name_it": "Busta trasparente porta documenti",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 57,
+      "name_it": "Buste o sacchetti in plastica per alimenti",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 59,
+      "name_it": "Calcinacci (in modestà quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 60,
+      "name_it": "Calcolatrice",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 61,
+      "name_it": "Calendari oda muro o da tavolo in carta o cartone",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 62,
+      "name_it": "Calze e calzini",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 63,
+      "name_it": "Camera d'aria",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 65,
+      "name_it": "Candeggina",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 64,
+      "name_it": "Candeggina (contenitore vuoto e pulito)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 66,
+      "name_it": "Candela di cera",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 68,
+      "name_it": "Canna per irrigazione giardino (gomma dell'acqua)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 67,
+      "name_it": "Canne da pesca",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 69,
+      "name_it": "Canovacci",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 70,
+      "name_it": "Capelli e simili",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 71,
+      "name_it": "Cappello",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 72,
+      "name_it": "Capsule in plastica e/o alluminio (pulite)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 73,
+      "name_it": "Capsule in plastica e/o alluminio (sporche)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 75,
+      "name_it": "Carbone (da altre fonti)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 74,
+      "name_it": "Carbone (da legna)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 76,
+      "name_it": "Carne",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 77,
+      "name_it": "Carrozzine",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 78,
+      "name_it": "Carta (fogli, quaderni, sacchetti, libri) CR - CARTA",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 79,
+      "name_it": "Carta assorbente (da cucina)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 80,
+      "name_it": "Carta carbone",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 81,
+      "name_it": "Carta cerata",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 82,
+      "name_it": "Carta in rotolo \"copri lettini\" (es: estetiste, studio medico, ecc.)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 83,
+      "name_it": "Carta per affettati e/o formaggi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 84,
+      "name_it": "Carta plastificata o carta accoppiata con alluminio",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 86,
+      "name_it": "Carta stagnola (in alluminio e pulita)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 87,
+      "name_it": "Carta tissue (lavamani) e fazzoletti",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 85,
+      "name_it": "Carta unta, sporca di colla o altre sostanze (chimiche)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 88,
+      "name_it": "Carta vetrata",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 91,
+      "name_it": "Cartone (pulito)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 89,
+      "name_it": "Cartongesso",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 90,
+      "name_it": "Cartongesso (grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 92,
+      "name_it": "Cartucce esauste/toner",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 93,
+      "name_it": "Cassette audio e video",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 94,
+      "name_it": "Cassette di legno o plastica",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 96,
+      "name_it": "Cassettine di plastica per alimenti (di grandi dimensioni)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 95,
+      "name_it": "Cassettine di plastica per alimenti (frutta e verdura) uso domestico",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 97,
+      "name_it": "Cavi elettrici (completi di connettori)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 98,
+      "name_it": "CD-ROM/DVD",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 99,
+      "name_it": "Cellophane",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 100,
+      "name_it": "Cellophane in nylon per imballaggi (grandi dimensioni maggiore 60x40cm",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 101,
+      "name_it": "Cellulare",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 102,
+      "name_it": "Ceneri legna (spenta) di origine domestica",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 103,
+      "name_it": "Cera",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 104,
+      "name_it": "Ceramica, porcellana, terracotta (tazzine e stoviglie)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 105,
+      "name_it": "Ceramica, porcellana, terracotta (tazzine e stoviglie)(se di grandi dimensioni)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 106,
+      "name_it": "Cerotto",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 107,
+      "name_it": "Chiavi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 108,
+      "name_it": "Chiavi (se in grandi quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 109,
+      "name_it": "Chiodi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 110,
+      "name_it": "Chiodi (se in grandi quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 111,
+      "name_it": "Cibi cotti e crudi",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 112,
+      "name_it": "Cintura (in plastica, stoffa o cuoio in buono stato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 113,
+      "name_it": "Cintura inutilizzabile",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 114,
+      "name_it": "Colla e collanti",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 115,
+      "name_it": "Colla e collanti (contenitore vuoto e risciacquato)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 116,
+      "name_it": "Computer",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 119,
+      "name_it": "Confezioni in cartoncino per alimenti (porta uova, scatole pasta/riso)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 120,
+      "name_it": "Confezioni in plastica eo polistirolo rigide/sagomate per alimenti e cover",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 121,
+      "name_it": "contenitore per alimenti \"general line\" (latte)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 122,
+      "name_it": "Contenitori in plastica (capacità max 5 lt)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 117,
+      "name_it": "Contenitori in plastica/acciaio",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 118,
+      "name_it": "Contenitori in plastica/acciaio (se grandi)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 123,
+      "name_it": "Contenitori per bevande (in cartone poliaccoppiato)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 124,
+      "name_it": "Contenitori per cosmetici vuoti",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 125,
+      "name_it": "coperchio in plastica e/o alluminio per alimenti",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 126,
+      "name_it": "Copertoni per automobili e motociclette (utenze domestiche)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 127,
+      "name_it": "Copertoni per biciclette",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 128,
+      "name_it": "Cornice grande (plastica, metallo o legno verniciato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 130,
+      "name_it": "Cosmetici (contenitore pieno o contenente residui)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 129,
+      "name_it": "Cosmetici (contenitore vuoto)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 131,
+      "name_it": "Cotone usato",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 132,
+      "name_it": "Cotton-fioc",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 133,
+      "name_it": "Cover telefono",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 134,
+      "name_it": "Crema per viso, corpo, abbronzanti)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 135,
+      "name_it": "Cucchiai in metallo",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 136,
+      "name_it": "Cuoio",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 138,
+      "name_it": "Cuscini",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 137,
+      "name_it": "Cuscini (grandi dimensioni)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 139,
+      "name_it": "Custodie CD musicassette / VHS",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 140,
+      "name_it": "Damigiana",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 141,
+      "name_it": "Deodoranti uso personale (contenitore con simboli di pericolo)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 142,
+      "name_it": "Deodoranti uso personale (contenitore vuoto e senza simboli di pericolo)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 143,
+      "name_it": "Detersivo (contenitore in cartone)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 144,
+      "name_it": "Detersivo (contenitore vuoto e risciacquato)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 145,
+      "name_it": "Deumidificatori",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 146,
+      "name_it": "Dischetti per computer / DVD",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 147,
+      "name_it": "Dischi in vinile",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 148,
+      "name_it": "Disinfettante",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 149,
+      "name_it": "Divano",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 150,
+      "name_it": "Elastici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 151,
+      "name_it": "Elettrodomestici",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 152,
+      "name_it": "Erba",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 153,
+      "name_it": "Escrementi di animali domestici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 154,
+      "name_it": "Eternit",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 155,
+      "name_it": "Etichette adesive e di indumenti",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 156,
+      "name_it": "Etichette carta",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 157,
+      "name_it": "Evidenziatori",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 158,
+      "name_it": "Farmaci",
+      "bin_ids": [
+        4
+      ],
+      "bins": [
+        "FARMACIA"
+      ]
+    },
+    {
+      "id": 159,
+      "name_it": "Fascette ad uso imballaggio",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 160,
+      "name_it": "Fazoletti di carta (asciugamani)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 161,
+      "name_it": "Fazzoletti di carta (bianco e colorato, sporto e pulito)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 162,
+      "name_it": "Feltrini",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 163,
+      "name_it": "Ferro (oggetti)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 164,
+      "name_it": "Ferro da stiro",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 165,
+      "name_it": "Fiala in plastica",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 166,
+      "name_it": "Fiala in vetro",
+      "bin_ids": [
+        8
+      ],
+      "bins": [
+        "VETRO"
+      ]
+    },
+    {
+      "id": 167,
+      "name_it": "Fiammiferi",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 168,
+      "name_it": "Fili elettrici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 169,
+      "name_it": "Fili elettrici (se in grandi quanità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 170,
+      "name_it": "Film in plastica (cellophane)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 171,
+      "name_it": "Film in plastica (pellicola - cellophane maggiore di 60x40 cm)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 172,
+      "name_it": "Filo interdentale",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 173,
+      "name_it": "Filtri da tè e caffè",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 174,
+      "name_it": "Filtri olio motore",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 175,
+      "name_it": "Finestra (max 30 Kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 176,
+      "name_it": "Fiori finti",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 177,
+      "name_it": "Fiori secchi e/o recisi",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 178,
+      "name_it": "Fiori secchi e/o recisi (se grandi)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 179,
+      "name_it": "Fitofarmaci",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 181,
+      "name_it": "Flaconi e bottiglie in plastica (capacità max 5 lt)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 180,
+      "name_it": "Flaconi in plastica",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 182,
+      "name_it": "Floppy disk",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 183,
+      "name_it": "Foderine in plastica per libri e quaderni",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 184,
+      "name_it": "Fogli di carta/cartone",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 185,
+      "name_it": "Fondi di caffè",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 186,
+      "name_it": "Forbici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 187,
+      "name_it": "Fotografia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 188,
+      "name_it": "Frigorifero",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 189,
+      "name_it": "Frutta",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 190,
+      "name_it": "Fusti in plastica o in acciaiorigenerati (capacità max 5 lt)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 191,
+      "name_it": "Gancio per chiudere i sacchetti",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 192,
+      "name_it": "Garze/bende",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 193,
+      "name_it": "Giocattolo",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 194,
+      "name_it": "Giocattolo in plastica (grandi dimensioni o elettronico)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 195,
+      "name_it": "Giornale",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 196,
+      "name_it": "Gomma",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 197,
+      "name_it": "Gomma da cancellare",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 198,
+      "name_it": "Gomma da masticare",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 199,
+      "name_it": "Gommapiuma",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 200,
+      "name_it": "Graffe - punti metallici",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 201,
+      "name_it": "Grattugia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 202,
+      "name_it": "Guanti in gomma",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 203,
+      "name_it": "Guanti in nitrile/lattice",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 204,
+      "name_it": "Guanti in pelle o lana",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 205,
+      "name_it": "Guarnizioni",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 206,
+      "name_it": "Guarnizioni in amianto",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 207,
+      "name_it": "Gusci di frutta secca e di uova",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 208,
+      "name_it": "Gusci di molluschi e crostacei",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 211,
+      "name_it": "Imballaggi (in plastica, metallo/alluminio)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 212,
+      "name_it": "Imballaggi (in polistirolo)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 213,
+      "name_it": "Imballaggi contaminati da sostanze pericolose",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 209,
+      "name_it": "Imballaggi in cartone",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 210,
+      "name_it": "Imballaggi in cartone (se grandi)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 214,
+      "name_it": "Impregnante",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 215,
+      "name_it": "Inerti (max 30 Kg/giorno e 5 volte anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 216,
+      "name_it": "Juta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 217,
+      "name_it": "Lacche (contenitore non vuoto e pericoloso)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 218,
+      "name_it": "Lacche (contenitore vuoto e non pericoloso)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 219,
+      "name_it": "Lacci per scarpe",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 220,
+      "name_it": "Lametta usa e getta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 221,
+      "name_it": "Lamiera",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 222,
+      "name_it": "Lampada da tavolo o da terra",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 223,
+      "name_it": "Lampadario",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 224,
+      "name_it": "Lampadina a fluorescenza (a basso consumo, neon)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 225,
+      "name_it": "Lampadina a incandescenza",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 226,
+      "name_it": "Lana di roccia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 227,
+      "name_it": "Lana di roccia (se grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 228,
+      "name_it": "Lastra di vetro",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 229,
+      "name_it": "Lastra di vetro (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 230,
+      "name_it": "Lattine (in alluminio/banda stagnata)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 231,
+      "name_it": "Lavastoviglie/Lavatrice",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 233,
+      "name_it": "Lenti di occhiali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 232,
+      "name_it": "Lenti d’ingrandimento",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 235,
+      "name_it": "Lenzuola",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 234,
+      "name_it": "Lenzuola (in buono stato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 236,
+      "name_it": "Lettiera naturale per animali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 237,
+      "name_it": "Lettiera sintetica per animali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 238,
+      "name_it": "Libri",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 239,
+      "name_it": "Lische di pesce",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 240,
+      "name_it": "Lucida scarpe",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 241,
+      "name_it": "Lumini con candela",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 242,
+      "name_it": "Lumini elettrici",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 243,
+      "name_it": "Macchina da cucire",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 244,
+      "name_it": "Macchina fotografica",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 245,
+      "name_it": "Macinini meccanici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 246,
+      "name_it": "Mascherine protettive",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 247,
+      "name_it": "Mastice e relativo contenitore",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 248,
+      "name_it": "Materasso",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 249,
+      "name_it": "Matita",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 250,
+      "name_it": "Mattoni/mattonelle in ceramica (grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 251,
+      "name_it": "Mattoni/mattonelle in ceramica (in modestà quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 252,
+      "name_it": "Medicine scadute",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 253,
+      "name_it": "Metro in legno e/o metallo e/o plastica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 254,
+      "name_it": "Mobili in legno",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 255,
+      "name_it": "Moka per il caffè",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 256,
+      "name_it": "Mollette",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 257,
+      "name_it": "Monitor del computer",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 258,
+      "name_it": "Moquette (grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 259,
+      "name_it": "Moquette (max 30 kg/giornoe 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 260,
+      "name_it": "Morsa",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 261,
+      "name_it": "Mozzicone di sigaretta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 262,
+      "name_it": "Musicassette",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 263,
+      "name_it": "Nastro adesivo",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 264,
+      "name_it": "Nastro per regali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 265,
+      "name_it": "Negativi fotografici",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 266,
+      "name_it": "Neon",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 268,
+      "name_it": "Nylon da imaballaggi leggeri (grandi dimensioni)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 267,
+      "name_it": "Nylon da imaballaggi leggeri (max 40x60 cm)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 269,
+      "name_it": "Occhiali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 270,
+      "name_it": "Olio alimentare usato",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 271,
+      "name_it": "Olio per le automobili",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 272,
+      "name_it": "Ombrello e ombrellone",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 273,
+      "name_it": "Ossi (avanzi di cibo)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 274,
+      "name_it": "Ovatta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 275,
+      "name_it": "Pacchetto di sigarette (senza pellicola trasparente ne alluminio)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 276,
+      "name_it": "Paglia",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 277,
+      "name_it": "Palettine del caffè",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 278,
+      "name_it": "Pallone da gioco",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 279,
+      "name_it": "Pane",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 280,
+      "name_it": "Pannolini",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 281,
+      "name_it": "Pellicole in plastica per alimenti",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 282,
+      "name_it": "Peluches",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 283,
+      "name_it": "Penna e pennarello",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 284,
+      "name_it": "Pennello",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 285,
+      "name_it": "Pentola",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 286,
+      "name_it": "Persiana (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 287,
+      "name_it": "Pesce",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 288,
+      "name_it": "Pettine in legno e/o plastica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 289,
+      "name_it": "Piante",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 290,
+      "name_it": "Piante (se grandi quanità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 292,
+      "name_it": "Piastrelle (grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 291,
+      "name_it": "Piastrelle (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 293,
+      "name_it": "Piatti biodegradabili in mater bi (conformi norma UNI EN 13432:2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 294,
+      "name_it": "Piatti in ceramica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 295,
+      "name_it": "Piatti in ceramica (se grandi quanità più di 12pz)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 296,
+      "name_it": "Piatti in plastica usa e getta",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 297,
+      "name_it": "Pile",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 298,
+      "name_it": "Piscina gonfiabile per bambini",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 299,
+      "name_it": "Piume",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 300,
+      "name_it": "Piumino (coperta o giubbino)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 301,
+      "name_it": "Pluribolle in plastica da imballo",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 302,
+      "name_it": "Pneumatici",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 303,
+      "name_it": "Polistirolo da edilizia (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 305,
+      "name_it": "Polistirolo da imballaggi",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 304,
+      "name_it": "Polistirono da isolazione",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 306,
+      "name_it": "Poltrona",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 307,
+      "name_it": "Porcellana",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 308,
+      "name_it": "Porta (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 310,
+      "name_it": "Posate in accaio",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 311,
+      "name_it": "Posate in accaio (se di grandi quantità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 309,
+      "name_it": "Posate in materiale biodegradabile (conformi norma UNI EN 13432:2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 312,
+      "name_it": "Posate in plastica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 313,
+      "name_it": "Preservativi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 314,
+      "name_it": "Profumatori d'ambiente non ricaricabili",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 315,
+      "name_it": "Profumi (contenitore vuoto)",
+      "bin_ids": [
+        8
+      ],
+      "bins": [
+        "VETRO"
+      ]
+    },
+    {
+      "id": 316,
+      "name_it": "Quaderno",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 317,
+      "name_it": "Quadro",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 318,
+      "name_it": "Radio",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 319,
+      "name_it": "Rafia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 320,
+      "name_it": "Ramaglie",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 321,
+      "name_it": "Rasoi usa e getta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 322,
+      "name_it": "Recipienti gas da campeggio vuoti (in metallo)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 323,
+      "name_it": "Reggette per imballaggi",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 324,
+      "name_it": "Reggette per legatura pacchi",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 325,
+      "name_it": "Rete per frutta e verdura",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 326,
+      "name_it": "Rete per letto",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 327,
+      "name_it": "Rivista",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 328,
+      "name_it": "Rottami metallici",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 329,
+      "name_it": "Rullino fotografico",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 334,
+      "name_it": "Sacchetti in plastica biodegradabile (conformi norma UNI EN 13432:2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 335,
+      "name_it": "Sacchetti per aspirapolvere e polvere raccolta",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 330,
+      "name_it": "Sacchetto di carta",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 331,
+      "name_it": "Sacchetto per alimenti in materiale accoppiato carta/alluminio (es. sacchetto biscotti)(salvo diversa indicazione sulla confezione)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 333,
+      "name_it": "Sacchetto per alimenti in materiale accoppiato plastica-alluminio (es. caffè, surgelati, patatine, salatini, involucri dei cioccolatini, ecc)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 332,
+      "name_it": "Sacchetto per alimento in plastica (pasta, insalata lavata)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 336,
+      "name_it": "Salviette umidificate",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 338,
+      "name_it": "Sanitari in ceramica (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 337,
+      "name_it": "Sanitari in ceramica (se grandi quantità)",
+      "bin_ids": [
+        3
+      ],
+      "bins": [
+        "DITTA SPECIALIZZATA"
+      ]
+    },
+    {
+      "id": 339,
+      "name_it": "Sapone",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 340,
+      "name_it": "Scaffale in ferro o legno",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 341,
+      "name_it": "Scale",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 342,
+      "name_it": "Scarpe in buono stato",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 343,
+      "name_it": "Scarpe rotte o spaiate",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 344,
+      "name_it": "Scarti di cucina",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 346,
+      "name_it": "Scatola per pizza (con resti di cibo)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 345,
+      "name_it": "Scatola per pizza (senza resta di cibo)",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 347,
+      "name_it": "Scatole o buste in plastica per confezionamenti capi di abbigliamento",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 348,
+      "name_it": "Scatoloni in cartone",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 349,
+      "name_it": "Schedine scommesse - gratta e vinci",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 350,
+      "name_it": "Sci",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 351,
+      "name_it": "Scontrino in carta chimica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 352,
+      "name_it": "Scopa",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 353,
+      "name_it": "Secchiello in plastica",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 354,
+      "name_it": "Sedia",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 355,
+      "name_it": "Segatura",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 356,
+      "name_it": "Segatura (se grandi quanità)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 357,
+      "name_it": "Seggiolino auto per bambini",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 358,
+      "name_it": "Shoppers in carta",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 359,
+      "name_it": "Shoppers in plastica",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 360,
+      "name_it": "Sigarette",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 361,
+      "name_it": "Siringhe",
+      "bin_ids": [
+        4
+      ],
+      "bins": [
+        "FARMACIA"
+      ]
+    },
+    {
+      "id": 362,
+      "name_it": "Solventi",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 363,
+      "name_it": "Spazzole - spazzolini",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 364,
+      "name_it": "Specchio",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 365,
+      "name_it": "Spugna",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 366,
+      "name_it": "Stagnola pulita",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 367,
+      "name_it": "Stendino per biancheria",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 368,
+      "name_it": "Stoffa - stracci",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 369,
+      "name_it": "Stoviglie in plastica monouso (solo cucchiaini, posate, cannucce, palettine per bevande)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 370,
+      "name_it": "Stoviglie in plastica monouso (solo piatti e bicchieri)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 371,
+      "name_it": "Strumenti musicali",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 372,
+      "name_it": "Strumenti musicali (se grandi)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 373,
+      "name_it": "Stuzzicadenti",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 375,
+      "name_it": "Sughero finto o trattato",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 374,
+      "name_it": "Sughero vero",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 376,
+      "name_it": "Sveglia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 377,
+      "name_it": "Sveglia (elettrica)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 378,
+      "name_it": "Tagliere (in legno e/o plastica)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 379,
+      "name_it": "Taniche in plastica per uso domestico fino a 5 lt",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 380,
+      "name_it": "Taniche in plastica per uso domestico oltrna 5 lt e fino a 20 lt",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 381,
+      "name_it": "Tapparella (max 30 kg/giorno e 5 volte/anno)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 382,
+      "name_it": "Tappeti",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 383,
+      "name_it": "Tappetini auto",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 384,
+      "name_it": "Tappo (di barattolo in metallo e a corona)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 386,
+      "name_it": "Tappo (in sughero finto o trattato)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 385,
+      "name_it": "Tappo (in sughero vero)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 387,
+      "name_it": "Tastiera del computer",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 388,
+      "name_it": "Tazzine in ceramica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 389,
+      "name_it": "Telecomando",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 390,
+      "name_it": "Telefono/telefonini",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 391,
+      "name_it": "Televisore",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 392,
+      "name_it": "Telo in nylon",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 393,
+      "name_it": "Telo in nylon (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 394,
+      "name_it": "Tende",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 395,
+      "name_it": "Tende (se in buono stato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 396,
+      "name_it": "Termometro (a mercurio o elettrico)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 397,
+      "name_it": "Terriccio per piante",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 398,
+      "name_it": "Tessili casalinghi (tende, tovaglie, tappeti)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 399,
+      "name_it": "Tessili casalinghi (tende, tovaglie, tappeti)(se in buono stato)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 400,
+      "name_it": "Tovaglia in carta",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 401,
+      "name_it": "Tovagliolo in carta",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 402,
+      "name_it": "Trielina",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 403,
+      "name_it": "Trucchi",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 404,
+      "name_it": "Tubetti di alimenti (sporchi o con residui)",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 405,
+      "name_it": "Tubetti di alimenti (vuoti e puliti)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 406,
+      "name_it": "Tubetti di colore",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 407,
+      "name_it": "Tubetti di colore (pieni)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 408,
+      "name_it": "Tubetti di dentifricio",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 409,
+      "name_it": "Tubetti di maionese",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 410,
+      "name_it": "Tubo al neon",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 411,
+      "name_it": "Tubo ferro",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 412,
+      "name_it": "Tubo in gomma",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 413,
+      "name_it": "Tubo in PVC",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 414,
+      "name_it": "Uova",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 415,
+      "name_it": "Valigia",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 416,
+      "name_it": "Valigia (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 418,
+      "name_it": "Vaschetta in mater bi (conformi norma UNI EN 13432:2002)",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 417,
+      "name_it": "Vaschetta per alimenti pulita (in plastica o alluminio/latta o in materiale accoppiato come plastica e alluminio)",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 419,
+      "name_it": "Vaschette e imballaggi di piccoli elettrodomestici in polistirolo espanso",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 420,
+      "name_it": "Vaschette in materiale accoppiato",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 421,
+      "name_it": "Vasetto yogurt vuoto",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 424,
+      "name_it": "Vaso in plastica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 425,
+      "name_it": "Vaso in plastica (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 426,
+      "name_it": "Vaso in plastica per piante da trapiantare",
+      "bin_ids": [
+        5
+      ],
+      "bins": [
+        "IMBALLAGGI LEGGERI"
+      ]
+    },
+    {
+      "id": 422,
+      "name_it": "Vaso in terracotta, vetro o ceramica",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 423,
+      "name_it": "Vaso in terracotta, vetro o ceramica (se grande)",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 427,
+      "name_it": "Verdura",
+      "bin_ids": [
+        6
+      ],
+      "bins": [
+        "ORGANICO"
+      ]
+    },
+    {
+      "id": 428,
+      "name_it": "Videocassette",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 429,
+      "name_it": "Volantino senza imballo",
+      "bin_ids": [
+        1
+      ],
+      "bins": [
+        "CARTA E CARTONE"
+      ]
+    },
+    {
+      "id": 430,
+      "name_it": "Zaino",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    },
+    {
+      "id": 431,
+      "name_it": "Zerbino",
+      "bin_ids": [
+        7
+      ],
+      "bins": [
+        "RESIDUO"
+      ]
+    },
+    {
+      "id": 432,
+      "name_it": "Zoccoli",
+      "bin_ids": [
+        2
+      ],
+      "bins": [
+        "CENTRO RACCOLTA"
+      ]
+    }
+  ]
+}
