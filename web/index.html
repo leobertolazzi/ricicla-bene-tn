@@ -24,14 +24,25 @@
   <div class="app-shell">
     <header class="top-bar">
       <div class="top-bar__title">
-        <h1>Ricicla Bene TN</h1>
+        <div class="brand">
+          <img class="brand__icon" src="./icons/favicon.svg" alt="" width="34" height="34" />
+          <div class="brand__text">
+            <h1>Ricicla Bene TN</h1>
+            <div class="brand__meta">
+              <span class="pill-comune">Trento</span>
+              <span id="model-status" class="status-badge status-badge--loading">
+                <span class="dot"></span>
+                <span id="model-status-text">Caricamento modello...</span>
+              </span>
+            </div>
+          </div>
+        </div>
         <div class="top-bar__actions">
-          <span class="pill-comune">Trento</span>
           <div class="lang-toggle" role="group" aria-label="Lingua / Language">
             <button type="button" class="lang-btn active" data-lang="it">IT</button>
             <button type="button" class="lang-btn" data-lang="en">EN</button>
           </div>
-          <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambia tema chiaro o scuro">
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambia tema chiaro o scuro" title="Cambia tema">
             <svg id="theme-icon-moon" class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
             </svg>
@@ -39,13 +50,9 @@
               <circle cx="12" cy="12" r="4" />
               <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
             </svg>
-            <span id="theme-toggle-label">Scuro</span>
+            <span id="theme-toggle-label" class="sr-only">Scuro</span>
           </button>
         </div>
-      </div>
-      <div id="model-status" class="status-badge status-badge--loading">
-        <span class="dot"></span>
-        <span id="model-status-text">Caricamento modello...</span>
       </div>
     </header>
 
@@ -54,7 +61,7 @@
       <section id="tab-scan" class="tab-panel active" aria-label="Scansiona rifiuto">
         <div id="update-banner" class="install-hint hidden" role="status">
           <span data-i18n-html="updateBanner"><strong>Riciclabolario aggiornato</strong> alle ultime regole di Dolomiti Ambiente.</span>
-          <button id="dismiss-update-banner" class="icon-btn" aria-label="Chiudi">
+          <button id="dismiss-update-banner" type="button" class="icon-btn" aria-label="Chiudi">
             <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
@@ -63,7 +70,7 @@
 
         <div id="ios-install-hint" class="install-hint hidden">
           <span data-i18n-html="iosInstall"><strong>Installa su iPhone:</strong> tocca <strong>Condividi</strong> in Safari e poi <strong>Aggiungi alla schermata Home</strong>.</span>
-          <button id="dismiss-install-hint" class="icon-btn" aria-label="Chiudi">
+          <button id="dismiss-install-hint" type="button" class="icon-btn" aria-label="Chiudi">
             <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
@@ -72,17 +79,23 @@
 
         <div class="preview-card" id="preview-card">
           <img id="preview-image" class="preview-image hidden" alt="Anteprima foto rifiuto" />
-          <button id="clear-image-btn" class="clear-btn hidden" aria-label="Rimuovi foto">
+          <div id="scan-overlay" class="scan-overlay hidden" aria-hidden="true">
+            <div class="scan-overlay__beam"></div>
+          </div>
+          <button id="clear-image-btn" type="button" class="clear-btn hidden" aria-label="Rimuovi foto">
             <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
           </button>
-          <div id="preview-placeholder" class="preview-placeholder">
+          <div id="preview-placeholder" class="preview-placeholder" role="button" tabindex="0" aria-label="Seleziona o trascina un'immagine">
+            <div class="reticle-corner reticle-corner--tl" aria-hidden="true"></div>
+            <div class="reticle-corner reticle-corner--tr" aria-hidden="true"></div>
+            <div class="reticle-corner reticle-corner--bl" aria-hidden="true"></div>
+            <div class="reticle-corner reticle-corner--br" aria-hidden="true"></div>
             <div class="placeholder-icon" aria-hidden="true">
               <svg class="icon icon--hero" viewBox="0 0 24 24">
-                <path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2" />
-                <path d="M14.5 9.5a3.5 3.5 0 0 0-5 0M9.5 14.5a3.5 3.5 0 0 0 5 0" />
-                <circle cx="12" cy="12" r="1.5" />
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                <circle cx="12" cy="13" r="3.2" />
               </svg>
             </div>
             <h2 data-i18n="scanHeading">Inquadra un rifiuto</h2>
@@ -111,12 +124,12 @@
           <input id="gallery-input" type="file" accept="image/*" class="sr-only" />
         </div>
 
-        <div id="scan-loading" class="loading-box hidden">
+        <div id="scan-loading" class="loading-box hidden" role="status">
           <div class="spinner"></div>
           <span data-i18n="analyzing">Analisi in corso sul dispositivo...</span>
         </div>
 
-        <div id="scan-error" class="error-box hidden"></div>
+        <div id="scan-error" class="error-box hidden" role="alert"></div>
 
         <div id="results-section" class="results-section hidden">
           <div class="results-header">
@@ -133,25 +146,29 @@
           </button>
         </div>
 
-        <div id="privacy-card" class="info-card">
-          <strong class="info-card__heading">
-            <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-              <path d="m9 12 2 2 4-4" />
-            </svg>
-            <span data-i18n="privacyTitle">100% offline e privato</span>
-          </strong>
-          <p data-i18n-html="privacyBody">Il modello SigLIP 2 gira direttamente nel tuo browser (nessuna foto viene inviata a server esterni) e confronta l'immagine con tutte le <span id="item-count-inline">432</span> voci del Riciclabolario di Dolomiti Ambiente.</p>
-        </div>
+        <div class="scan-notes">
+          <div id="privacy-card" class="info-card--privacy">
+            <div class="info-card__icon-wrap" aria-hidden="true">
+              <svg class="icon icon--sm" viewBox="0 0 24 24">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <div class="info-card__body">
+              <strong class="info-card__heading" data-i18n="privacyTitle">100% offline e privato</strong>
+              <p data-i18n-html="privacyBody">SigLIP 2 gira interamente nel tuo browser (nessuna foto esce dal dispositivo) e confronta l'immagine con tutte le <span id="item-count-inline">432</span> voci di Dolomiti Ambiente.</p>
+            </div>
+          </div>
 
-        <div class="disclaimer-box" role="note">
-          <svg class="icon icon--md disclaimer-box__icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
-            <path d="M12 9v4M12 17h.01" />
-          </svg>
-          <div>
-            <strong data-i18n="warningLabel">Avviso:</strong>
-            <span data-i18n="warningBody">i modelli AI possono commettere errori. Sei tu l'unico responsabile della scelta finale su dove conferire il rifiuto.</span>
+          <div class="disclaimer-box" role="note">
+            <svg class="icon icon--sm disclaimer-box__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+              <path d="M12 9v4M12 17h.01" />
+            </svg>
+            <div>
+              <strong data-i18n="warningLabel">Avviso:</strong>
+              <span data-i18n="warningBody">i modelli AI possono commettere errori. Sei tu l'unico responsabile della scelta finale su dove conferire il rifiuto.</span>
+            </div>
           </div>
         </div>
       </section>
@@ -159,23 +176,38 @@
       <!-- TAB 2: RICICLABOLARIO -->
       <section id="tab-search" class="tab-panel" aria-label="Riciclabolario">
         <div class="search-sticky">
-          <input
-            id="search-input"
-            type="search"
-            class="search-input"
-            placeholder="Cerca un rifiuto (es. yogurt, vetro, pizza)..."
-            autocomplete="off"
-          />
+          <div class="search-input-wrap">
+            <svg class="icon icon--md search-input__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              class="search-input"
+              placeholder="Cerca un rifiuto (es. yogurt, vetro, pizza)..."
+              autocomplete="off"
+            />
+            <button id="clear-search-btn" type="button" class="search-clear-btn hidden" aria-label="Cancella ricerca">
+              <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
           <div id="bin-filter-chips" class="chips-row"></div>
         </div>
-        <div id="search-count" class="search-count"></div>
-        <div id="search-list" class="search-list"></div>
+        <div class="search-meta-row">
+          <div id="search-count" class="search-count"></div>
+        </div>
+        <div id="search-list" class="search-list grouped-list"></div>
       </section>
 
       <!-- TAB 3: GUIDA TRENTO -->
       <section id="tab-guide" class="tab-panel" aria-label="Guida Trento">
-        <h2 class="section-title" data-i18n="guideTitle">Raccolta differenziata — Trento</h2>
-        <div id="guide-bins-list" class="guide-list"></div>
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="guideTitle">Raccolta differenziata — Trento</h2>
+        </div>
+        <div id="guide-bins-list" class="guide-list grouped-list"></div>
 
         <div class="info-card source-card">
           <h3 data-i18n="sourceTitle">Fonte dati, Modello & Note legali</h3>

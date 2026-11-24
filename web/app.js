@@ -7,16 +7,23 @@ const EMB_URL = "./assets/embeddings_trento_fp16.bin";
 const DEFAULT_IMAGE_SIZE = 224;
 const DEFAULT_SOFTMAX_TEMP = 55.0;
 
-const BIN_EMOJI = {
-  1: "📰", // CARTA E CARTONE
-  2: "🏭", // CENTRO RACCOLTA
-  3: "⚠️", // DITTA SPECIALIZZATA
-  4: "💊", // FARMACIA
-  5: "🧴", // IMBALLAGGI LEGGERI
-  6: "🍃", // ORGANICO
-  7: "🗑️", // RESIDUO
-  8: "🍾", // VETRO
+const BIN_ICON_PATHS = {
+  1: '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/>',
+  2: '<path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/>',
+  3: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+  4: '<path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/>',
+  5: '<path d="M10 2v2.5L7 7.5V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7.5l-3-3V2Z"/><path d="M9 2h6"/><path d="M7 12h10"/>',
+  6: '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+  7: '<path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>',
+  8: '<path d="M9 2h6"/><path d="M10 2v4l-2.5 3.5A3 3 0 0 0 7 11.2V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-8.8a3 3 0 0 0-.5-1.7L14 6V2"/>',
 };
+
+const CHEVRON_SVG = '<svg class="icon icon--sm expand-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+
+function binIconSvg(binId, sizeClass = "icon--xs") {
+  const paths = BIN_ICON_PATHS[binId] || '<circle cx="12" cy="12" r="9"/>';
+  return `<svg class="icon ${sizeClass}" viewBox="0 0 24 24" aria-hidden="true">${paths}</svg>`;
+}
 
 const BIN_EN = {
   1: {
@@ -66,39 +73,42 @@ const I18N = {
     updateBanner: "<strong>Riciclabolario aggiornato</strong> alle ultime regole di Dolomiti Ambiente.",
     iosInstall: "<strong>Installa su iPhone:</strong> tocca <strong>Condividi</strong> in Safari e poi <strong>Aggiungi alla schermata Home</strong>.",
     scanHeading: "Inquadra un rifiuto",
-    scanHint: "Scatta una foto a un solo oggetto, idealmente su sfondo neutro, per vedere i possibili conferimenti a Trento.",
+    scanHint: "Scatta o carica una foto di un solo oggetto per vedere dove conferirlo a Trento.",
     takePhoto: "Scatta foto",
     library: "Libreria",
     analyzing: "Analisi in corso sul dispositivo...",
-    top10Title: "Top 10 risultati più probabili",
+    topMatchEyebrow: "Corrispondenza migliore",
+    top10Title: "Top 10 risultati",
     notFoundBtn: "Non è tra questi? Cerca nel Riciclabolario",
     privacyTitle: "100% offline e privato",
-    privacyBody: (n) => `Il modello SigLIP 2 gira direttamente nel tuo browser (nessuna foto viene inviata a server esterni) e confronta l'immagine con tutte le <span id="item-count-inline">${n}</span> voci del Riciclabolario di Dolomiti Ambiente.`,
+    privacyBody: (n) => `SigLIP 2 gira interamente nel tuo browser (nessuna foto esce dal dispositivo) e confronta l'immagine con tutte le <span id="item-count-inline">${n}</span> voci di Dolomiti Ambiente.`,
     warningLabel: "Avviso:",
     warningBody: "i modelli AI possono commettere errori. Sei tu l'unico responsabile della scelta finale su dove conferire il rifiuto.",
     searchPlaceholder: "Cerca un rifiuto (es. yogurt, vetro, pizza)...",
+    searchEmpty: "Nessun rifiuto trovato con questi filtri.",
+    resetFilters: "Reimposta filtri",
     guideTitle: "Raccolta differenziata — Trento",
     sourceTitle: "Fonte dati, Modello & Note legali",
     legalNote: "Applicazione civica non ufficiale, gratuita e open-source (licenza MIT), non affiliata a Dolomiti Ambiente S.r.l. né alla Provincia Autonoma di Trento. I dati informativi sono tratti dal Riciclabolario pubblico di Dolomiti Ambiente; per conferme ufficiali fai riferimento al sito istituzionale di Dolomiti Ambiente.",
     tabScan: "Scansiona",
     tabSearch: "Riciclabolario",
     tabGuide: "Guida",
-    themeLight: "Chiaro",
-    themeDark: "Scuro",
+    themeLight: "Tema chiaro",
+    themeDark: "Tema scuro",
     statusLoading: "Caricamento modello...",
-    statusReady: (ep) => `Pronto offline (${ep})`,
-    statusError: "Errore caricamento modello",
+    statusReady: (ep) => `Offline · ${ep}`,
+    statusError: "Errore modello",
     whereToDispose: "Dove conferirlo",
     allFilter: "Tutti",
-    itemsFound: (n) => `${n} voci trovate`,
+    itemsFound: (n) => `${n} voci`,
     metaVersion: "Versione app",
     metaMunicipality: "Comune",
     metaItems: "Voci dizionario",
     metaUpdated: "Aggiornato al",
     metaModel: "Modello on-device",
-    linkGuide: "Apri Guida ufficiale alla raccolta (Trento) ↗",
-    linkDict: "Apri Riciclabolario Dolomiti Ambiente ↗",
-    linkPdf: "Scarica PDF ufficiale Dolomiti Ambiente ↗",
+    linkGuide: "Guida ufficiale alla raccolta (Trento)",
+    linkDict: "Riciclabolario Dolomiti Ambiente",
+    linkPdf: "PDF ufficiale Dolomiti Ambiente",
     errModelWait: "Il modello si sta ancora caricando: riprova tra un attimo.",
     errAnalyze: (m) => `Errore durante l'analisi: ${m}`,
     errImageRead: "Impossibile leggere l'immagine selezionata.",
@@ -107,39 +117,42 @@ const I18N = {
     updateBanner: "<strong>Dictionary updated</strong> with the latest Dolomiti Ambiente rules.",
     iosInstall: "<strong>Install on iPhone:</strong> tap <strong>Share</strong> in Safari, then <strong>Add to Home Screen</strong>.",
     scanHeading: "Scan a waste item",
-    scanHint: "Take a photo of a single item, ideally on a neutral background, to see Trento disposal options.",
+    scanHint: "Take or upload a photo of a single item to see how to sort it in Trento.",
     takePhoto: "Take photo",
     library: "Library",
     analyzing: "Analyzing on device...",
-    top10Title: "Top 10 most likely matches",
+    topMatchEyebrow: "Best match",
+    top10Title: "Top 10 matches",
     notFoundBtn: "Not here? Search the Riciclabolario",
     privacyTitle: "100% offline & private",
-    privacyBody: (n) => `SigLIP 2 runs directly in your browser (photos never leave your device) and compares the image against all <span id="item-count-inline">${n}</span> entries in Dolomiti Ambiente's Trento Riciclabolario.`,
+    privacyBody: (n) => `SigLIP 2 runs directly in your browser (photos never leave your device) and matches against all <span id="item-count-inline">${n}</span> Dolomiti Ambiente entries.`,
     warningLabel: "Note:",
     warningBody: "AI models can make mistakes. You are solely responsible for choosing where to dispose of the item.",
     searchPlaceholder: "Search an item (e.g. yogurt, glass, pizza)...",
+    searchEmpty: "No matching waste items found.",
+    resetFilters: "Reset filters",
     guideTitle: "Waste sorting guide — Trento",
     sourceTitle: "Data source, Model & Legal notice",
     legalNote: "Unofficial, free, open-source civic app (MIT license), not affiliated with Dolomiti Ambiente S.r.l. or Provincia Autonoma di Trento. Sorting rules are sourced from Dolomiti Ambiente's public Riciclabolario; always refer to Dolomiti Ambiente's official site for confirmation.",
     tabScan: "Scan",
     tabSearch: "Dictionary",
     tabGuide: "Guide",
-    themeLight: "Light",
-    themeDark: "Dark",
+    themeLight: "Light theme",
+    themeDark: "Dark theme",
     statusLoading: "Loading model...",
-    statusReady: (ep) => `Ready offline (${ep})`,
-    statusError: "Model loading error",
+    statusReady: (ep) => `Offline · ${ep}`,
+    statusError: "Model error",
     whereToDispose: "Where to dispose",
     allFilter: "All",
-    itemsFound: (n) => `${n} items found`,
+    itemsFound: (n) => `${n} items`,
     metaVersion: "App version",
     metaMunicipality: "Municipality",
     metaItems: "Dictionary items",
     metaUpdated: "Last updated",
     metaModel: "On-device model",
-    linkGuide: "Open official Trento sorting guide ↗",
-    linkDict: "Open Dolomiti Ambiente Riciclabolario ↗",
-    linkPdf: "Download official Dolomiti Ambiente PDF ↗",
+    linkGuide: "Official Trento sorting guide",
+    linkDict: "Dolomiti Ambiente Riciclabolario",
+    linkPdf: "Official Dolomiti Ambiente PDF",
     errModelWait: "The model is still loading: please try again in a moment.",
     errAnalyze: (m) => `Analysis error: ${m}`,
     errImageRead: "Could not read the selected image.",
@@ -162,6 +175,7 @@ const state = {
   lastPredictions: null,
   lastInferenceMs: 0,
   expandedId: null,
+  expandedSearchId: null,
   selectedBinFilter: null,
 };
 
@@ -454,6 +468,7 @@ async function classifyCurrentImage() {
 
   el.scanError.classList.add("hidden");
   el.scanLoading.classList.remove("hidden");
+  el.scanOverlay?.classList.remove("hidden");
 
   try {
     const t0 = performance.now();
@@ -472,6 +487,7 @@ async function classifyCurrentImage() {
     showError(t("errAnalyze", err.message || err));
   } finally {
     el.scanLoading.classList.add("hidden");
+    el.scanOverlay?.classList.add("hidden");
   }
 }
 
@@ -484,45 +500,58 @@ function renderPredictions(preds, elapsedMs) {
   el.inferenceMeta.textContent = `${Math.round(elapsedMs)} ms · offline`;
   el.resultsList.innerHTML = "";
 
+  let othersGroup = null;
+  if (preds.length > 1) {
+    othersGroup = document.createElement("div");
+    othersGroup.className = "grouped-list";
+  }
+
   for (const p of preds) {
+    const isTop = p.rank === 1;
+    const isExpanded = state.expandedId === p.item.id;
     const card = document.createElement("button");
     card.type = "button";
-    card.className = `result-card${p.rank === 1 ? " result-card--top" : ""}`;
+    card.className = `${isTop ? "result-card result-card--top" : "result-row"}${isExpanded ? " is-expanded" : ""}`;
+    card.setAttribute("aria-expanded", String(isExpanded));
     card.style.setProperty("--bin-color", p.bin.color_hex);
     card.style.setProperty("--bin-text-color", p.bin.text_color_hex || "#ffffff");
 
     const pct = Math.round(p.confidence * 100);
-    const emoji = BIN_EMOJI[p.bin.id] || "♻️";
-    const isExpanded = state.expandedId === p.item.id;
     const textColor = p.bin.text_color_hex || "#ffffff";
     const nameInfo = itemDisplay(p.item);
     const binInfo = binDisplay(p.bin);
 
     card.innerHTML = `
+      ${isTop ? `<div class="result-card__eyebrow"><span>★</span><span></span></div>` : ""}
       <div class="result-card__top">
         <span class="rank-circle">#${p.rank}</span>
         <div class="result-card__body">
-          <div class="result-card__name"></div>
+          <div class="result-card__title-row">
+            <div class="result-card__name"></div>
+            ${CHEVRON_SVG}
+          </div>
           ${nameInfo.secondary ? '<div class="item-subtitle"></div>' : ""}
           <div class="result-card__row">
-            <span class="bin-badge" style="background:${p.bin.color_hex};color:${textColor}">${emoji} ${binInfo.label}</span>
+            <span class="bin-badge" style="background:${p.bin.color_hex};color:${textColor}">${binIconSvg(p.bin.id)} <span></span></span>
             <span class="score-text">${pct}%</span>
           </div>
         </div>
       </div>
-      <div class="score-bar">
-        <div class="score-bar__fill" style="width:${Math.max(4, pct)}%"></div>
-      </div>
+      ${isTop ? `<div class="score-bar"><div class="score-bar__fill" style="width:${Math.max(4, pct)}%"></div></div>` : ""}
       <div class="result-card__guidance${isExpanded ? "" : " hidden"}">
         <strong></strong>
         <span></span>
       </div>
     `;
 
+    if (isTop) {
+      card.querySelector(".result-card__eyebrow span:last-child").textContent = t("topMatchEyebrow");
+    }
     card.querySelector(".result-card__name").textContent = nameInfo.primary;
     if (nameInfo.secondary) {
       card.querySelector(".item-subtitle").textContent = nameInfo.secondary;
     }
+    card.querySelector(".bin-badge span").textContent = binInfo.label;
     card.querySelector(".result-card__guidance strong").textContent = t("whereToDispose");
     card.querySelector(".result-card__guidance span").textContent = binInfo.guidance;
 
@@ -531,7 +560,15 @@ function renderPredictions(preds, elapsedMs) {
       renderPredictions(preds, elapsedMs);
     });
 
-    el.resultsList.appendChild(card);
+    if (isTop) {
+      el.resultsList.appendChild(card);
+    } else {
+      othersGroup.appendChild(card);
+    }
+  }
+
+  if (othersGroup) {
+    el.resultsList.appendChild(othersGroup);
   }
 
   el.resultsSection.classList.remove("hidden");
@@ -575,6 +612,7 @@ function clearImage() {
   el.previewImage.removeAttribute("src");
   el.previewImage.classList.add("hidden");
   el.clearImageBtn.classList.add("hidden");
+  el.scanOverlay?.classList.add("hidden");
   el.previewPlaceholder.classList.remove("hidden");
   el.resultsSection.classList.add("hidden");
   el.scanError.classList.add("hidden");
@@ -606,7 +644,8 @@ function renderBinFilterChips() {
     const active = state.selectedBinFilter === bin.id;
     const binInfo = binDisplay(bin);
     chip.className = `chip${active ? " active" : ""}`;
-    chip.textContent = `${BIN_EMOJI[bin.id] || ""} ${binInfo.short}`;
+    chip.innerHTML = `${binIconSvg(bin.id)} <span></span>`;
+    chip.querySelector("span").textContent = binInfo.short;
     if (active) {
       chip.style.background = bin.color_hex;
       chip.style.color = bin.text_color_hex || "#ffffff";
@@ -622,7 +661,10 @@ function renderBinFilterChips() {
 
 function renderSearchList() {
   if (!state.dictionary) return;
-  const query = normalizeText(el.searchInput.value.trim());
+  const rawValue = el.searchInput.value;
+  el.clearSearchBtn?.classList.toggle("hidden", rawValue.length === 0);
+
+  const query = normalizeText(rawValue.trim());
   const tokens = query ? query.split(/\s+/) : [];
 
   const matches = state.dictionary.items.filter((item) => {
@@ -638,37 +680,76 @@ function renderSearchList() {
   el.searchCount.textContent = t("itemsFound", matches.length);
   el.searchList.innerHTML = "";
 
+  if (matches.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "empty-state";
+    empty.innerHTML = `<p></p><button type="button" class="btn btn--ghost"></button>`;
+    empty.querySelector("p").textContent = t("searchEmpty");
+    const resetBtn = empty.querySelector("button");
+    resetBtn.textContent = t("resetFilters");
+    resetBtn.addEventListener("click", () => {
+      el.searchInput.value = "";
+      state.selectedBinFilter = null;
+      renderBinFilterChips();
+      renderSearchList();
+    });
+    el.searchList.appendChild(empty);
+    return;
+  }
+
   const frag = document.createDocumentFragment();
   for (const item of matches) {
     const bin = state.binsById.get(item.bin_id);
     const nameInfo = itemDisplay(item);
     const binInfo = binDisplay(bin);
+    const isExpanded = state.expandedSearchId === item.id;
 
-    const row = document.createElement("div");
-    row.className = "search-item";
+    const row = document.createElement("button");
+    row.type = "button";
+    row.className = `search-item${isExpanded ? " is-expanded" : ""}`;
+    row.setAttribute("aria-expanded", String(isExpanded));
 
-    const nameDiv = document.createElement("div");
-    nameDiv.className = "search-item__name";
-    nameDiv.textContent = nameInfo.primary;
-    row.appendChild(nameDiv);
+    row.innerHTML = `
+      <div class="search-item__header">
+        <div class="search-item__main">
+          <div class="search-item__name"></div>
+          ${nameInfo.secondary ? '<div class="item-subtitle"></div>' : ""}
+          <span class="bin-badge" style="background:${bin.color_hex};color:${bin.text_color_hex || "#ffffff"}">${binIconSvg(bin.id)} <span></span></span>
+        </div>
+        ${CHEVRON_SVG}
+      </div>
+      <div class="result-card__guidance${isExpanded ? "" : " hidden"}">
+        <strong></strong>
+        <span></span>
+      </div>
+    `;
 
+    row.querySelector(".search-item__name").textContent = nameInfo.primary;
     if (nameInfo.secondary) {
-      const subDiv = document.createElement("div");
-      subDiv.className = "item-subtitle";
-      subDiv.textContent = nameInfo.secondary;
-      row.appendChild(subDiv);
+      row.querySelector(".item-subtitle").textContent = nameInfo.secondary;
     }
+    row.querySelector(".bin-badge span").textContent = binInfo.label;
+    row.querySelector(".result-card__guidance strong").textContent = t("whereToDispose");
+    row.querySelector(".result-card__guidance span").textContent = binInfo.guidance;
 
-    const badge = document.createElement("span");
-    badge.className = "bin-badge";
-    badge.style.background = bin.color_hex;
-    badge.style.color = bin.text_color_hex || "#ffffff";
-    badge.textContent = `${BIN_EMOJI[bin.id] || "♻️"} ${binInfo.label}`;
+    row.addEventListener("click", () => {
+      state.expandedSearchId = state.expandedSearchId === item.id ? null : item.id;
+      renderSearchList();
+    });
 
-    row.appendChild(badge);
     frag.appendChild(row);
   }
   el.searchList.appendChild(frag);
+}
+
+function createSourceLink(href, label) {
+  const link = document.createElement("a");
+  link.href = href;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.innerHTML = `<span></span><svg class="icon icon--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>`;
+  link.querySelector("span").textContent = label;
+  return link;
 }
 
 function renderGuide() {
@@ -679,7 +760,7 @@ function renderGuide() {
     const card = document.createElement("div");
     card.className = "guide-card";
     card.innerHTML = `
-      <div class="guide-icon" style="background:${bin.color_hex};color:${bin.text_color_hex || "#ffffff"}">${BIN_EMOJI[bin.id] || "♻️"}</div>
+      <div class="guide-icon" style="background:${bin.color_hex};color:${bin.text_color_hex || "#ffffff"}">${binIconSvg(bin.id, "icon--md")}</div>
       <div>
         <h3></h3>
         <p></p>
@@ -701,27 +782,15 @@ function renderGuide() {
   `;
 
   el.sourceLinks.innerHTML = "";
-  const guideLink = document.createElement("a");
-  guideLink.href = "https://dolomitiambiente.it/it/trento/domestica/raccolta-differenziata/guida-alla-raccolta";
-  guideLink.target = "_blank";
-  guideLink.rel = "noopener noreferrer";
-  guideLink.textContent = t("linkGuide");
-  el.sourceLinks.appendChild(guideLink);
-
-  const webLink = document.createElement("a");
-  webLink.href = dict.source_url;
-  webLink.target = "_blank";
-  webLink.rel = "noopener noreferrer";
-  webLink.textContent = t("linkDict");
-  el.sourceLinks.appendChild(webLink);
-
+  el.sourceLinks.appendChild(
+    createSourceLink(
+      "https://dolomitiambiente.it/it/trento/domestica/raccolta-differenziata/guida-alla-raccolta",
+      t("linkGuide")
+    )
+  );
+  el.sourceLinks.appendChild(createSourceLink(dict.source_url, t("linkDict")));
   if (dict.pdf_url) {
-    const pdfLink = document.createElement("a");
-    pdfLink.href = dict.pdf_url;
-    pdfLink.target = "_blank";
-    pdfLink.rel = "noopener noreferrer";
-    pdfLink.textContent = t("linkPdf");
-    el.sourceLinks.appendChild(pdfLink);
+    el.sourceLinks.appendChild(createSourceLink(dict.pdf_url, t("linkPdf")));
   }
 }
 
@@ -732,6 +801,7 @@ function switchTab(tabName) {
   document.querySelectorAll(".tab-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tabName);
   });
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 function maybeShowIOSInstallHint() {
@@ -750,19 +820,58 @@ function applyTheme(theme, persist = false) {
   }
   const meta = $("meta-theme-color");
   if (meta) {
-    meta.content = theme === "dark" ? "#0c141a" : "#006390";
+    meta.content = theme === "dark" ? "#0b1218" : "#006390";
   }
   if (el.themeIconMoon && el.themeIconSun && el.themeToggleLabel) {
     if (theme === "dark") {
       el.themeIconMoon.classList.add("hidden");
       el.themeIconSun.classList.remove("hidden");
       el.themeToggleLabel.textContent = t("themeLight");
+      el.themeToggle.title = t("themeLight");
+      el.themeToggle.setAttribute("aria-label", t("themeLight"));
     } else {
       el.themeIconSun.classList.add("hidden");
       el.themeIconMoon.classList.remove("hidden");
       el.themeToggleLabel.textContent = t("themeDark");
+      el.themeToggle.title = t("themeDark");
+      el.themeToggle.setAttribute("aria-label", t("themeDark"));
     }
   }
+}
+
+function setupDropZone() {
+  const card = el.previewCard;
+  const placeholder = el.previewPlaceholder;
+  if (!card || !placeholder) return;
+
+  placeholder.addEventListener("click", () => el.galleryInput.click());
+  placeholder.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      el.galleryInput.click();
+    }
+  });
+
+  ["dragenter", "dragover"].forEach((evt) => {
+    card.addEventListener(evt, (e) => {
+      e.preventDefault();
+      card.classList.add("is-dragover");
+    });
+  });
+
+  ["dragleave", "drop"].forEach((evt) => {
+    card.addEventListener(evt, (e) => {
+      e.preventDefault();
+      card.classList.remove("is-dragover");
+    });
+  });
+
+  card.addEventListener("drop", (e) => {
+    const file = e.dataTransfer?.files?.[0];
+    if (file && file.type.startsWith("image/")) {
+      handleImageFile(file);
+    }
+  });
 }
 
 function registerServiceWorker() {
@@ -791,7 +900,9 @@ async function bootstrap() {
   el.modelStatusText = $("model-status-text");
   el.iosInstallHint = $("ios-install-hint");
   el.dismissInstallHint = $("dismiss-install-hint");
+  el.previewCard = $("preview-card");
   el.previewImage = $("preview-image");
+  el.scanOverlay = $("scan-overlay");
   el.clearImageBtn = $("clear-image-btn");
   el.previewPlaceholder = $("preview-placeholder");
   el.cameraInput = $("camera-input");
@@ -804,6 +915,7 @@ async function bootstrap() {
   el.privacyCard = $("privacy-card");
   el.jumpToSearchBtn = $("jump-to-search-btn");
   el.searchInput = $("search-input");
+  el.clearSearchBtn = $("clear-search-btn");
   el.binFilterChips = $("bin-filter-chips");
   el.searchCount = $("search-count");
   el.searchList = $("search-list");
@@ -819,6 +931,13 @@ async function bootstrap() {
     el.searchInput.focus();
   });
   el.searchInput.addEventListener("input", renderSearchList);
+  el.clearSearchBtn?.addEventListener("click", () => {
+    el.searchInput.value = "";
+    renderSearchList();
+    el.searchInput.focus();
+  });
+
+  setupDropZone();
 
   el.dismissInstallHint.addEventListener("click", () => {
     el.iosInstallHint.classList.add("hidden");
