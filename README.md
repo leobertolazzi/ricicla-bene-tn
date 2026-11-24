@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ricicla-bene-tn.vercel.app/"><img src="https://img.shields.io/badge/Live%20PWA-ricicla--bene--tn.vercel.app-006390.svg" alt="Live PWA: ricicla-bene-tn.vercel.app" /></a>
   <img src="https://img.shields.io/badge/Version-v0.1.0-006390.svg" alt="Version: v0.1.0" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0082A4.svg" alt="License: MIT" /></a>
   <img src="https://img.shields.io/badge/Model-SigLIP%202%20Base%20(Apache--2.0)-259ED4.svg" alt="Model: SigLIP 2 Base Apache-2.0" />
@@ -10,6 +11,8 @@
 </p>
 
 # Ricicla Bene TN
+
+**Live app:** [ricicla-bene-tn.vercel.app](https://ricicla-bene-tn.vercel.app/)
 
 A zero-shot, 100% client-side **PWA** for sorting household waste in **Trento** (*Utenza Domestica*) using Dolomiti Ambiente's official **Riciclabolario**.
 
@@ -62,9 +65,9 @@ pipeline/.venv/bin/python pipeline/sync_pwa_assets.py
 
 ## Deployment & Auto-Updates
 
-The PWA is deployed directly from `web/` on **Vercel** (configured via [`vercel.json`](vercel.json)):
+The PWA is live at **[ricicla-bene-tn.vercel.app](https://ricicla-bene-tn.vercel.app/)**, deployed directly from `web/` on **Vercel** (configured via [`vercel.json`](vercel.json)):
 
-- **Install on iPhone:** Open the live Vercel URL in Safari → **Share (`↑`) → Aggiungi alla schermata Home**.
+- **Install on iPhone:** Open [ricicla-bene-tn.vercel.app](https://ricicla-bene-tn.vercel.app/) in Safari → **Share (`↑`) → Aggiungi alla schermata Home**.
 - **Weekly data sync:** [`.github/workflows/update-riciclabolario.yml`](.github/workflows/update-riciclabolario.yml) checks Dolomiti Ambiente every Monday and opens a PR with refreshed JSON/embeddings (`~775 KB`). Merging the PR automatically triggers a Vercel redeploy without changing the cached ONNX model.
 
 ## License
