@@ -1,6 +1,6 @@
 [project]
 name = "ricicla-bene-tn-pipeline"
-version = "0.1.0"
+version = "0.2.0"
 description = "Offline scraping, MobileCLIP2-S0 text embedding generation, and CoreML export for Ricicla Bene TN"
 requires-python = ">=3.11,<3.14"
 dependencies = [

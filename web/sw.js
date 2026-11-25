@@ -1,4 +1,4 @@
-const CACHE_NAME = "ricicla-bene-tn-v0.1.0-15";
+const CACHE_NAME = "ricicla-bene-tn-v0.2.0-1";
 
 const DATA_URLS = [
   "/assets/dictionary_trento.json",

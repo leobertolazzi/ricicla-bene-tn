@@ -1,6 +1,6 @@
 /* Ricicla Bene TN — 100% client-side SigLIP 2 (Apache-2.0) zero-shot PWA */
 
-const APP_VERSION = "0.1.0";
+const APP_VERSION = "0.2.0";
 const MODEL_URL = "./assets/model_image.onnx";
 const DICT_URL = "./assets/dictionary_trento.json";
 const EMB_URL = "./assets/embeddings_trento_fp16.bin";
@@ -418,14 +418,21 @@ function rankTopK(imageVec, k) {
     scores[i] = dot;
   }
 
+  const temp = state.softmaxTemp;
+  let maxLogit = -Infinity;
+  for (let i = 0; i < n; i++) {
+    const logit = scores[i] * temp;
+    if (logit > maxLogit) maxLogit = logit;
+  }
+  let expSum = 0;
+  for (let i = 0; i < n; i++) {
+    expSum += Math.exp(scores[i] * temp - maxLogit);
+  }
+  expSum = expSum || 1;
+
   const indices = Array.from({ length: n }, (_, i) => i);
   indices.sort((a, b) => scores[b] - scores[a]);
   const top = indices.slice(0, k);
-
-  const temp = state.softmaxTemp;
-  const maxLogit = Math.max(...top.map((i) => scores[i] * temp));
-  const exps = top.map((i) => Math.exp(scores[i] * temp - maxLogit));
-  const expSum = exps.reduce((a, b) => a + b, 0) || 1;
 
   return top.map((idx, rankIdx) => {
     const item = items[idx];
@@ -434,7 +441,7 @@ function rankTopK(imageVec, k) {
       item,
       bin: state.binsById.get(item.bin_id),
       cosine: scores[idx],
-      confidence: exps[rankIdx] / expSum,
+      confidence: Math.exp(scores[idx] * temp - maxLogit) / expSum,
     };
   });
 }
@@ -517,6 +524,7 @@ function renderPredictions(preds, elapsedMs) {
     card.style.setProperty("--bin-text-color", p.bin.text_color_hex || "#ffffff");
 
     const pct = Math.round(p.confidence * 100);
+    const pctLabel = p.confidence > 0 && pct === 0 ? "<1%" : `${pct}%`;
     const textColor = p.bin.text_color_hex || "#ffffff";
     const nameInfo = itemDisplay(p.item);
     const binInfo = binDisplay(p.bin);
@@ -533,7 +541,7 @@ function renderPredictions(preds, elapsedMs) {
           ${nameInfo.secondary ? '<div class="item-subtitle"></div>' : ""}
           <div class="result-card__row">
             <span class="bin-badge" style="background:${p.bin.color_hex};color:${textColor}">${binIconSvg(p.bin.id)} <span></span></span>
-            <span class="score-text">${pct}%</span>
+            <span class="score-text">${pctLabel}</span>
           </div>
         </div>
       </div>

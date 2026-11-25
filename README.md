@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://ricicla-bene-tn.vercel.app/"><img src="https://img.shields.io/badge/Live%20PWA-ricicla--bene--tn.vercel.app-006390.svg" alt="Live PWA: ricicla-bene-tn.vercel.app" /></a>
-  <img src="https://img.shields.io/badge/Version-v0.1.0-006390.svg" alt="Version: v0.1.0" />
+  <img src="https://img.shields.io/badge/Version-v0.2.0-006390.svg" alt="Version: v0.2.0" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0082A4.svg" alt="License: MIT" /></a>
   <img src="https://img.shields.io/badge/Model-SigLIP%202%20Base%20(Apache--2.0)-259ED4.svg" alt="Model: SigLIP 2 Base Apache-2.0" />
   <img src="https://img.shields.io/badge/Trento-432%20items-83B81A.svg" alt="432 Trento items" />
